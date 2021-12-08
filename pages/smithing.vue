@@ -24,6 +24,7 @@
       </template>
       <p>Type: Use Item On Object</p>
       <p>First Item ID: {{ bar ? bar.id : 0 }}</p>
+      <p>First Amount: 27</p>
       <p>Second Item ID: 0</p>
       <p>Second Amount: 0</p>
       <p>Object ID: {{ bank ? bank.obj : 0 }}</p>
