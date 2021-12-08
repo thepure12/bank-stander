@@ -1,7 +1,7 @@
 export const state = () => ({
     startParam: 20447241,
     items: [
-        "Dagger", "Sword", "Scimicar", "Longsword", "2H Sword", "Axe", "Mace", "Warhammer", "Battleaxe",
+        "Dagger", "Sword", "Scimitar", "Longsword", "2H Sword", "Axe", "Mace", "Warhammer", "Battleaxe",
         "Claws", "Chainbody", "Platelegs", "Plateskirt", "Platebody", "Nails", "Medium Helm", "Full Helm",
         "Square Shield", "Kiteshield", "", "Dart Tips", "Arrowtips", "Throwing Knives",
         "", "Javelin Heads", "Bolts", "Limbs"
