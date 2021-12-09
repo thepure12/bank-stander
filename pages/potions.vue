@@ -1,8 +1,14 @@
 <template>
   <div>
-    <h6>Still Adding Potions</h6>
+    <h6>Diving Potions Coming Soon</h6>
     <b-form-group id="bank-group" label="Bank" label-for="bank">
-      <b-form-select id="bank" v-model="bank" :options="banks"></b-form-select>
+      <b-form-select id="bank" v-model="bank" :options="banks">
+        <template #first>
+          <b-form-select-option :value="null" disabled>
+            -- Please select an option --
+          </b-form-select-option>
+        </template>
+      </b-form-select>
     </b-form-group>
     <b-form-group id="potions-group" label="Potions" label-for="potions">
       <b-form-select
@@ -10,13 +16,16 @@
         v-model="potion"
         :options="selections"
         @change="potionSelected"
-      ></b-form-select>
+      >
+        <template #first>
+          <b-form-select-option :value="null" disabled>
+            -- Please select an option --
+          </b-form-select-option>
+        </template>
+      </b-form-select>
     </b-form-group>
     <b-form-group>
-      <b-form-radio-group v-model="type" :options="options">
-        <!-- <b-form-checkbox value="pot">Potion</b-form-checkbox>
-        <b-form-checkbox value="unf">Unfinished</b-form-checkbox>
-        <b-form-checkbox value="tar">Tar</b-form-checkbox> -->
+      <b-form-radio-group v-model="type" :options="options" @change="potion=null">
       </b-form-radio-group>
     </b-form-group>
     <!-- Config -->
