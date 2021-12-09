@@ -1,21 +1,31 @@
 <template>
   <div>
     <b-form-group id="bank-group" label="Bank" label-for="bank">
-      <b-form-select
-        id="bank"
-        v-model="bank"
-        :options="smithing.banks"
-      ></b-form-select>
+      <b-form-select id="bank" v-model="bank" :options="smithing.banks">
+        <template #first>
+          <b-form-select-option :value="null" disabled>
+            -- Please select an option --
+          </b-form-select-option>
+        </template>
+      </b-form-select>
     </b-form-group>
     <b-form-group id="bar-group" label="Bar" label-for="bar">
-      <b-form-select
-        id="bar"
-        v-model="bar"
-        :options="smithing.bars"
-      ></b-form-select>
+      <b-form-select id="bar" v-model="bar" :options="smithing.bars">
+        <template #first>
+          <b-form-select-option :value="null" disabled>
+            -- Please select an option --
+          </b-form-select-option>
+        </template>
+      </b-form-select>
     </b-form-group>
     <b-form-group id="item-group" label="Item" label-for="item">
-      <b-form-select id="item" v-model="item" :options="items"></b-form-select>
+      <b-form-select id="item" v-model="item" :options="items">
+        <template #first>
+          <b-form-select-option :value="null" disabled>
+            -- Please select an option --
+          </b-form-select-option>
+        </template>
+      </b-form-select>
     </b-form-group>
     <!-- Config -->
     <b-card id="general-config" class="mb-3">
