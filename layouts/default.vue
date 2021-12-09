@@ -9,7 +9,7 @@
         <b-navbar-nav class="text-white">
           <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item to="/smithing">Smithing</b-nav-item>
-          <b-nav-item to="/potions">Potions</b-nav-item>
+          <b-nav-item to="/herblore">Herblore</b-nav-item>
           <b-nav-item to="/bugs">Report Bug</b-nav-item>
           <b-nav-item to="/suggestions">Suggestions</b-nav-item>
         </b-navbar-nav>
