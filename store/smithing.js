@@ -71,6 +71,16 @@ export const state = () => ({
                 opCode: 11,
                 obj: 2097
             }
+        },
+        {
+            text: "Prifddinas",
+            value: {
+                type: "Npc",
+                id: 9131,
+                opCode: 11,
+                obj: 2097
+            }
+
         }
     ]
 });

@@ -10,6 +10,15 @@ export const state = () => ({
 
         },
         {
+            text: "Prifddinas",
+            value: {
+                type: "Npc",
+                id: 9131,
+                opCode: 11,
+            }
+
+        },
+        {
             text: "Varrock West",
             value: {
                 type: "Npc",
