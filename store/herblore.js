@@ -77,6 +77,22 @@ export const state = () => ({
         "Tarromin tar": { first: 253, second: 1939 },
         "Harralander tar": { first: 255, second: 1939 }
     },
+    herbs: {
+        "Guam": 249,
+        "Marrentill": 251,
+        "Tarromin": 253,
+        "Harralander": 255,
+        "Ranarr": 257,
+        "Toadflax": 2998,
+        "Irit": 259,
+        "Avantoe": 261,
+        "Kwuarm": 263,
+        "Snapdragon": 3000,
+        "Cadantine": 265,
+        "Lantadyme": 2481,
+        "Dwarf": 267,
+        "Torstol": 269
+    },
     banks: [
         {
             text: "Varrock West",

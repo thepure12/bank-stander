@@ -1,6 +1,7 @@
 <template>
   <div>
     <h6>Diving Potions Coming Soon</h6>
+    <!-- Banks -->
     <b-form-group id="bank-group" label="Bank" label-for="bank">
       <b-form-select id="bank" v-model="bank" :options="banks">
         <template #first>
@@ -10,7 +11,23 @@
         </template>
       </b-form-select>
     </b-form-group>
-    <b-form-group id="potions-group" label="Potions" label-for="potions">
+    <!-- Herbs -->
+    <b-form-group
+      v-if="action === 'clean'"
+      id="herb-group"
+      label="Herbs"
+      label-for="potions"
+    >
+      <b-form-select id="herb" v-model="herb" :options="herbs">
+        <template #first>
+          <b-form-select-option :value="null" disabled>
+            -- Please select an option --
+          </b-form-select-option>
+        </template>
+      </b-form-select>
+    </b-form-group>
+    <!-- Potions -->
+    <b-form-group v-else id="potions-group" label="Potions" label-for="potions">
       <b-form-select
         id="potions"
         v-model="potion"
@@ -24,8 +41,16 @@
         </template>
       </b-form-select>
     </b-form-group>
+    <!-- Action -->
     <b-form-group>
-      <b-form-radio-group v-model="type" :options="options" @change="potion=null">
+      <b-form-radio-group
+        v-model="action"
+        :options="options"
+        @change="
+          potion = null;
+          herb = null;
+        "
+      >
       </b-form-radio-group>
     </b-form-group>
     <!-- Config -->
@@ -33,11 +58,13 @@
       <template #header>
         <h5 class="mb-0">General Config</h5>
       </template>
-      <p>Type: Use Item On Item</p>
+      <p>Type: {{ type }}</p>
       <p>First Item ID: {{ first }}</p>
       <p>First Amount: {{ firstAmount }}</p>
-      <p>Second Item ID: {{ second }}</p>
-      <p>Second Amount: {{ secondAmount }}</p>
+      <template v-if="action !== 'clean'">
+        <p>Second Item ID: {{ second }}</p>
+        <p>Second Amount: {{ secondAmount }}</p>
+      </template>
       <p>Use Placeholders: Off</p>
     </b-card>
     <b-card id="bank-config" class="mb-3">
@@ -68,18 +95,23 @@ export default {
   data() {
     return {
       potion: null,
+      herb: null,
       options: [
         { text: "Potion", value: "pot" },
         { text: "Unfinished", value: "unf" },
         { text: "Tar", value: "tar" },
+        { text: "Clean Herb", value: "clean" },
       ],
-      type: "pot",
+      action: "pot",
       bank: null,
     };
   },
   computed: {
     banks() {
       return this.$store.state.herblore.banks;
+    },
+    herbs() {
+      return this.sortSelections(this.$store.state.herblore.herbs);
     },
     finished() {
       return this.sortSelections(this.$store.state.herblore.finished);
@@ -95,21 +127,29 @@ export default {
         pot: this.finished,
         unf: this.unfinished,
         tar: this.tar,
-      }[this.type];
+      }[this.action];
+    },
+    type() {
+      return this.action === "clean" ? "Use Item" : "Use Item On Item";
     },
     first() {
-      if (!this.potion) return 0;
-      return this.potion.first;
+      if (this.potion) return this.potion.first;
+      else if (this.herb) return this.herb;
+      return 0;
     },
     second() {
-      if (!this.potion) return 0;
-      return this.potion.second;
+      if (this.potion) return this.potion.second;
+      return 0;
     },
     firstAmount() {
-      return this.type === "tar" ? 27 : 14;
+      if (this.action === "tar") return 27;
+      if (this.action === "clean") return 28;
+      return 14;
     },
     secondAmount() {
-      return this.type === "tar" ? 27 * 15 : 14;
+      if (this.action === "tar") return 27 * 15;
+      if (this.action === "clean") return 28;
+      return 14;
     },
   },
   methods: {
