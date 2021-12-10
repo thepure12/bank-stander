@@ -41,7 +41,7 @@
       </template>
       <p>Type: Use Item On Object</p>
       <p>First Item ID: {{ bar ? bar.id : 0 }}</p>
-      <p>First Amount: 27</p>
+      <p>First Amount: {{ firstAmount }}</p>
       <p>Second Item ID: 0</p>
       <p>Second Amount: 0</p>
       <p>Object ID: {{ bank ? bank.obj : 0 }}</p>
@@ -63,7 +63,7 @@
         <h5 class="mb-0">Menu Config</h5>
       </template>
       <p>Menu OpCode: 57</p>
-      <p>Menu Param1: {{ item ? item : 0 }}</p>
+      <p>Menu Param1: {{ item ? item.param : 0 }}</p>
     </b-card>
     <b-card id="inv-config" class="mb-3">
       <template #header>
@@ -101,12 +101,15 @@ export default {
         }
         if (item) {
           items.push({
-            text: item,
-            value: param,
+            text: item[0],
+            value: { param: param, bars: item[1] },
           });
         }
       }
       return items;
+    },
+    firstAmount() {
+      return this.item ? Math.floor(27 / this.item.bars) * this.item.bars : 0;
     },
   },
 };
