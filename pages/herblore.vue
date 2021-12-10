@@ -108,7 +108,7 @@ export default {
   },
   computed: {
     banks() {
-      return this.$store.state.herblore.banks;
+      return this.$store.state.banks;
     },
     herbs() {
       return this.sortSelections(this.$store.state.herblore.herbs);

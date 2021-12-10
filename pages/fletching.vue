@@ -5,7 +5,7 @@
       <b-form-select
         id="bank"
         v-model="bank"
-        :options="$store.state.herblore.banks"
+        :options="$store.state.banks"
       >
         <template #first>
           <b-form-select-option :value="null" disabled>

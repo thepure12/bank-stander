@@ -92,15 +92,5 @@ export const state = () => ({
         "Lantadyme": 2481,
         "Dwarf": 267,
         "Torstol": 269
-    },
-    banks: [
-        {
-            text: "Varrock West",
-            value: {
-                type: "Npc",
-                id: 2897,
-                opCode: 11,
-            }
-        }
-    ]
+    }
 });
