@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h6>Only Unstrung At The Moment</h6>
     <!-- Bank -->
     <b-form-group id="bank-group" label="Bank" label-for="bank">
       <b-form-select
