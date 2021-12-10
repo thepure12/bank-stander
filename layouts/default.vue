@@ -12,7 +12,7 @@
           <b-nav-item to="/herblore">Herblore</b-nav-item>
           <b-nav-item to="/fletching">Fletching</b-nav-item>
           <b-nav-item to="/jewellry">Jewellry</b-nav-item>
-          <b-nav-item to="/magic">Magic</b-nav-item>
+          <!-- <b-nav-item to="/magic">Magic</b-nav-item> -->
           <b-nav-item to="/bugs">Report Bug</b-nav-item>
           <b-nav-item to="/suggestions">Suggestions</b-nav-item>
         </b-navbar-nav>
