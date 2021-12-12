@@ -25,6 +25,14 @@ export const state = () => ({
                 id: 2897,
                 opCode: 11,
             }
+        },
+        {
+            text: "Woodcutting Guild",
+            value: {
+                type: "Game Object",
+                id: 28861,
+                opCode: 3,
+            }
         }
     ]
 });
