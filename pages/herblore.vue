@@ -43,8 +43,8 @@
       <div v-if="stackable" class="text-primary font-weight-bold mt-2">
         <b-icon icon="info-circle"></b-icon>
         <i>
-          This potion is made with a stackable ingredient, keep the full stack
-          in your invetory.
+          This is made with a stackable ingredient, keep the full stack in your
+          invetory.
         </i>
       </div>
     </b-form-group>
@@ -143,7 +143,7 @@ export default {
       }[this.action];
     },
     stackable() {
-      return this.potion && this.potion.stackable;
+      return (this.potion && this.potion.stackable) || this.action === "tar";
     },
     type() {
       if (this.action === "clean") return "Use Item";

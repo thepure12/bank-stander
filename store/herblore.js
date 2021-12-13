@@ -72,10 +72,10 @@ export const state = () => ({
         "Torstol potion (unf)": { first: 227, second: 269 }
     },
     tar: {
-        "Guam tar": { first: 249, second: 1939 },
-        "Marrentill tar": { first: 251, second: 1939 },
-        "Tarromin tar": { first: 253, second: 1939 },
-        "Harralander tar": { first: 255, second: 1939 }
+        "Guam tar": { first: 249, second: 1939, stackable: true },
+        "Marrentill tar": { first: 251, second: 1939, stackable: true },
+        "Tarromin tar": { first: 253, second: 1939, stackable: true },
+        "Harralander tar": { first: 255, second: 1939, stackable: true }
     },
     herbs: {
         "Guam": 249,
