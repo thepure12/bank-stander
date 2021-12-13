@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h6>Diving Potions Coming Soon</h6>
     <!-- Banks -->
     <b-form-group id="bank-group" label="Bank" label-for="bank">
       <b-form-select id="bank" v-model="bank" :options="banks">
