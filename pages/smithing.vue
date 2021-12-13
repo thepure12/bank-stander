@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="mb-3">
+    <!-- <div class="mb-3">
       <b-icon icon="info-circle" variant="primary" font-scale="1.2"> </b-icon>
       You may need to change the first item amount to a multiple of the number
       of bars it take to make the item you want to smith. For example, since
       platebodies take 5 bars, you would set the first item amount to 25 (5*5).
       I am working on a fix for this so that it auto calculates.
-    </div>
+    </div> -->
     <b-form-group id="bank-group" label="Bank" label-for="bank">
       <b-form-select id="bank" v-model="bank" :options="smithing.banks">
         <template #first>

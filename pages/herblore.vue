@@ -40,6 +40,13 @@
           </b-form-select-option>
         </template>
       </b-form-select>
+      <div v-if="stackable" class="text-primary font-weight-bold mt-2">
+        <b-icon icon="info-circle"></b-icon>
+        <i>
+          This potion is made with a stackable ingredient, keep the full stack
+          in your invetory.
+        </i>
+      </div>
     </b-form-group>
     <!-- Action -->
     <b-form-group>
@@ -61,10 +68,11 @@
       <p>Type: {{ type }}</p>
       <p>First Item ID: {{ first }}</p>
       <p>First Amount: {{ firstAmount }}</p>
-      <template v-if="action !== 'clean'">
+      <template v-if="action !== 'clean' && !stackable">
         <p>Second Item ID: {{ second }}</p>
         <p>Second Amount: {{ secondAmount }}</p>
       </template>
+      <p v-if="stackable">Tool ID: {{ toolId }}</p>
       <p>Use Placeholders: Off</p>
     </b-card>
     <b-card id="bank-config" class="mb-3">
@@ -91,7 +99,12 @@
   </div>
 </template>
 <script>
+import { BIcon, BIconInfoCircle } from "bootstrap-vue";
 export default {
+  components: {
+    BIcon,
+    BIconInfoCircle,
+  },
   data() {
     return {
       potion: null,
@@ -129,8 +142,13 @@ export default {
         tar: this.tar,
       }[this.action];
     },
+    stackable() {
+      return this.potion && this.potion.stackable;
+    },
     type() {
-      return this.action === "clean" ? "Use Item" : "Use Item On Item";
+      if (this.action === "clean") return "Use Item";
+      if (this.stackable) return "Use Tool On Item";
+      return "Use Item On Item";
     },
     first() {
       if (this.potion) return this.potion.first;
@@ -138,18 +156,22 @@ export default {
       return 0;
     },
     second() {
-      if (this.potion) return this.potion.second;
+      if (this.potion && !this.stackable) return this.potion.second;
       return 0;
     },
     firstAmount() {
-      if (this.action === "tar") return 27;
+      if (this.action === "tar" || this.stackable) return 27;
       if (this.action === "clean") return 28;
       return 14;
     },
     secondAmount() {
       if (this.action === "tar") return 27 * 15;
       if (this.action === "clean") return 28;
+      if (this.stackable) return 0;
       return 14;
+    },
+    toolId() {
+      if (this.potion && this.stackable) return this.potion.second;
     },
   },
   methods: {
