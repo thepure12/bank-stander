@@ -40,11 +40,17 @@
           </b-form-select-option>
         </template>
       </b-form-select>
-      <div v-if="stackable" class="text-primary font-weight-bold mt-2">
+      <div
+        v-if="stackable || action === 'tar'"
+        class="text-primary font-weight-bold mt-2"
+      >
         <b-icon icon="info-circle"></b-icon>
         <i>
           This is made with a stackable ingredient, keep the full stack in your
           invetory.
+          <template v-if="action === 'tar'">
+            Also, make sure you have a pestal and mortar in your invetory.
+          </template>
         </i>
       </div>
     </b-form-group>
@@ -72,8 +78,12 @@
         <p>Second Item ID: {{ second }}</p>
         <p>Second Amount: {{ secondAmount }}</p>
       </template>
-      <p v-if="stackable">Tool ID: {{ toolId }}</p>
-      <p>Use Placeholders: Off</p>
+      <p v-if="stackable || action === 'tar'">Tool ID: {{ toolId }}</p>
+      <p v-if="action !== 'tar'">Use Placeholders: Off</p>
+      <template v-else>
+        <p>Use Placeholders: On</p>
+        <p>Placeholder ID: 233</p>
+      </template>
     </b-card>
     <b-card id="bank-config" class="mb-3">
       <template #header>
@@ -143,7 +153,7 @@ export default {
       }[this.action];
     },
     stackable() {
-      return (this.potion && this.potion.stackable) || this.action === "tar";
+      return this.potion && this.potion.stackable;
     },
     type() {
       if (this.action === "clean") return "Use Item";
@@ -160,12 +170,13 @@ export default {
       return 0;
     },
     firstAmount() {
-      if (this.action === "tar" || this.stackable) return 27;
+      if (this.action === "tar") return 26;
       if (this.action === "clean") return 28;
+      if (this.stackable) return 27;
       return 14;
     },
     secondAmount() {
-      if (this.action === "tar") return 27 * 15;
+      if (this.action === "tar") return 0;
       if (this.action === "clean") return 28;
       if (this.stackable) return 0;
       return 14;
