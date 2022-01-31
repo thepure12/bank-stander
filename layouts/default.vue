@@ -14,6 +14,7 @@
           <b-nav-item-dropdown text="Crafting">
             <b-dropdown-item to="/jewellry">Jewellry</b-dropdown-item>
             <b-dropdown-item to="/glassblowing">Glassblowing</b-dropdown-item>
+            <b-dropdown-item to="/gemcutting">Gem Cutting</b-dropdown-item>
           </b-nav-item-dropdown>
           <!-- <b-nav-item to="/jewellry">Jewellry</b-nav-item> -->
           <!-- <b-nav-item to="/magic">Magic</b-nav-item> -->
