@@ -92,5 +92,21 @@ export const state = () => ({
         "Lantadyme": 2481,
         "Dwarf": 267,
         "Torstol": 269
+    },
+    grimy: {
+        "Guam": 199,
+        "Marrentill": 201,
+        "Tarromin": 203,
+        "Harralander": 205,
+        "Ranarr": 207,
+        "Toadflax": 3049,
+        "Irit": 209,
+        "Avantoe": 211,
+        "Kwuarm": 213,
+        "Snapdragon": 3051,
+        "Cadantine": 215,
+        "Lantadyme": 2485,
+        "Dwarf": 217,
+        "Torstol": 219
     }
 });

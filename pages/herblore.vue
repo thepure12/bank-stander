@@ -17,7 +17,7 @@
       label="Herbs"
       label-for="potions"
     >
-      <b-form-select id="herb" v-model="herb" :options="herbs">
+      <b-form-select id="herb" v-model="herb" :options="grimy">
         <template #first>
           <b-form-select-option :value="null" disabled>
             -- Please select an option --
@@ -31,7 +31,6 @@
         id="potions"
         v-model="potion"
         :options="selections"
-        @change="potionSelected"
       >
         <template #first>
           <b-form-select-option :value="null" disabled>
@@ -135,6 +134,9 @@ export default {
     herbs() {
       return this.sortSelections(this.$store.state.herblore.herbs);
     },
+    grimy() {
+      return this.sortSelections(this.$store.state.herblore.grimy);
+    },
     finished() {
       return this.sortSelections(this.$store.state.herblore.finished);
     },
@@ -202,10 +204,7 @@ export default {
           text: pot[0],
           value: pot[1],
         }));
-    },
-    potionSelected() {
-      if (!this.potion.secondary) this.unfinished = false;
-    },
+    }
   },
 };
 </script>
