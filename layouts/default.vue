@@ -9,6 +9,7 @@
         <b-navbar-nav class="text-white">
           <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item to="/smithing">Smithing</b-nav-item>
+          <b-nav-item to="/Cooking">Cooking</b-nav-item>
           <b-nav-item to="/herblore">Herblore</b-nav-item>
           <b-nav-item to="/fletching">Fletching</b-nav-item>
           <b-nav-item-dropdown text="Crafting">
