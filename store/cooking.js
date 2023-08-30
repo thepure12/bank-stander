@@ -30,7 +30,14 @@ export const state = () => ({
                 id: 3090,
                 opCode: 11,
                 obj: 26181
-            }
+            },
+            text: "Hosidius Range",
+            value: {
+                type: "Game Object",
+                id: 21301,
+                opCode: 3,
+                obj: 21302
+            },
         }
     ]
 });
