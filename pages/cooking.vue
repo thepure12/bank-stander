@@ -25,7 +25,8 @@
       </template>
       <p>Type: Use Item On Object</p>
     </b-card>
-    <b-card id="item-config" class="mb-3">
+    <ItemConfig :firstItem="item" :firstAmount="28"></ItemConfig>
+    <!-- <b-card id="item-config" class="mb-3">
       <template #header>
         <h5 class="mb-0">Item Config</h5>
       </template>
@@ -38,7 +39,7 @@
       <p>Placeholder ID: 0</p>
       <p>Placeholder ID: 0</p>
       <p>Placeholder ID: 0</p>
-    </b-card>
+    </b-card> -->
     <b-card id="object-config" class="mb-3">
       <template #header>
         <h5 class="mb-0">Object Config</h5>
@@ -70,10 +71,12 @@
 </template>
 <script>
 import { BIcon, BIconInfoCircle } from "bootstrap-vue";
+import ItemConfig from "~/components/ItemConfig.vue";
 export default {
   components: {
     BIcon,
     BIconInfoCircle,
+    ItemConfig
   },
   data() {
     return {
