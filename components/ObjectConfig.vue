@@ -1,15 +1,15 @@
 <template>
-    <b-card id="object-config" class="mb-3">
-        <template #header>
-            <h5 class="mb-0">Object Config</h5>
-        </template>
+    <ConfigCard title="Object Config">
         <p>Object ID: {{ bank ? bank.obj : 0 }}</p>
-    </b-card>
+    </ConfigCard>
 </template>
 <script>
+import ConfigCard from './ConfigCard.vue';
+
 export default {
     props: {
         bank: Object
-    }
+    },
+    components: { ConfigCard }
 }
 </script>

@@ -1,9 +1,6 @@
 <template>
     <div>
         <h5 class="text-warning">Warning: Does not auto eat!</h5>
-        <!-- <ConfigCard title="Test title">
-            Testing slot
-        </ConfigCard> -->
         <Banks v-model="bank" label="NPC" :banks="combat.banks"></Banks>
         <GeneralConfig :type="3"></GeneralConfig>
         <ItemConfig></ItemConfig>

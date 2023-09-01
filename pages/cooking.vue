@@ -1,23 +1,7 @@
 <template>
   <div>
-    <b-form-group id="bank-group" label="Bank" label-for="bank">
-      <b-form-select id="bank" v-model="bank" :options="cooking.banks">
-        <template #first>
-          <b-form-select-option :value="null" disabled>
-            -- Please select an option --
-          </b-form-select-option>
-        </template>
-      </b-form-select>
-    </b-form-group>
-    <b-form-group id="item-group" label="Item" label-for="item">
-      <b-form-select id="item" v-model="item" :options="items">
-        <template #first>
-          <b-form-select-option :value="null" disabled>
-            -- Please select an option --
-          </b-form-select-option>
-        </template>
-      </b-form-select>
-    </b-form-group>
+    <Banks v-model="bank" :banks="cooking.banks"></Banks>
+    <Items v-model="item" :items="items"></Items>
     <GeneralConfig :type="3"></GeneralConfig>
     <ItemConfig :firstItem="item" :firstAmount="28"></ItemConfig>
     <ObjectConfig :bank="bank"></ObjectConfig>
@@ -29,9 +13,11 @@
 <script>
 import { BIcon, BIconInfoCircle } from "bootstrap-vue";
 import BankConfig from "~/components/BankConfig.vue";
+import Banks from "~/components/Banks.vue";
 import GeneralConfig from "~/components/GeneralConfig.vue";
 import InvConfig from "~/components/InvConfig.vue";
 import ItemConfig from "~/components/ItemConfig.vue";
+import Items from "~/components/Items.vue";
 import MenuConfig from "~/components/MenuConfig.vue";
 import ObjectConfig from "~/components/ObjectConfig.vue";
 export default {
@@ -43,8 +29,10 @@ export default {
     MenuConfig,
     ObjectConfig,
     InvConfig,
-    GeneralConfig
-},
+    GeneralConfig,
+    Banks,
+    Items
+  },
   data() {
     return {
       bank: null,

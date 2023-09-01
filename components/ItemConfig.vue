@@ -1,8 +1,5 @@
 <template>
-    <b-card id="item-config" class="mb-3">
-        <template #header>
-            <h5 class="mb-0">Item Config</h5>
-        </template>
+    <ConfigCard title="Item Config">
         <p>First Item ID: {{ firstItem ? firstItem.id : 0 }}</p>
         <p>First Amount: {{ firstAmount ? firstAmount : 0 }}</p>
         <p>Use Second Item: {{ secondItem ? "On" : "Off" }}</p>
@@ -10,9 +7,11 @@
         <p>Second/Tool Amount: {{ secondAmount ? secondAmount : 0 }}</p>
         <p>Use Placeholders: {{ usePlaceholders ? "On" : "Off" }}</p>
         <p v-for="(p, i) in placeholders" :key="i">Placeholder ID: {{ p }}</p>
-    </b-card>
+    </ConfigCard>
 </template>
 <script>
+import ConfigCard from './ConfigCard.vue';
+
 export default {
     props: {
         firstItem: Object,
@@ -23,8 +22,9 @@ export default {
     },
     computed: {
         usePlaceholders() {
-            return this.placeholders.reduce((sum, val) => sum + val)
+            return this.placeholders.reduce((sum, val) => sum + val);
         }
-    }
+    },
+    components: { ConfigCard }
 }
 </script>

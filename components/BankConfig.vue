@@ -1,17 +1,17 @@
 <template>
-    <b-card id="bank-config" class="mb-3">
-        <template #header>
-            <h5 class="mb-0">Bank Config</h5>
-        </template>
+    <ConfigCard title="Bank Config">
         <p>Bank Type: {{ bank ? bank.type : "Npc" }}</p>
         <p>Bank ID: {{ bank ? bank.id : 0 }}</p>
         <p>Bank Op Code: {{ bank ? bank.opCode : 0 }}</p>
-    </b-card>
+    </ConfigCard>
 </template>
 <script>
+import ConfigCard from './ConfigCard.vue';
+
 export default {
     props: {
         bank: Object
-    }
+    },
+    components: { ConfigCard }
 }
 </script>

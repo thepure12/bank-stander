@@ -3,10 +3,10 @@
         <template #header>
             <div class="d-flex px-2 py-1" v-b-toggle="`${uuid}`">
                 <h6 class="mb-0">{{ title }}</h6>
-                <b-btn class="ml-auto px-2 py-0" size="sm">
+                <div class="ml-auto px-2 py-0" size="sm">
                     <b-icon v-if="!show" icon="chevron-expand"></b-icon>
                     <b-icon v-else icon="chevron-contract"></b-icon>
-                </b-btn>
+                </div>
             </div>
         </template>
         <b-collapse :id="uuid" v-model="show">
