@@ -1,6 +1,6 @@
 <template>
     <ConfigCard :title="label" visible>
-        <b-form-select id="bank" :value="value" @input="v => $emit('input', v)" :options="banks">
+        <b-form-select id="item" :value="value" @input="v => $emit('input', v)" :options="items">
             <template #first>
                 <b-form-select-option :value="null" disabled>
                     -- Please select an option --
@@ -14,8 +14,8 @@ import ConfigCard from './ConfigCard.vue';
 
 export default {
     props: {
-        label: { type: String, default: "Bank" },
-        banks: Array,
+        label: { type: String, default: "Item" },
+        items: Array,
         value: Object
     },
     components: { ConfigCard }

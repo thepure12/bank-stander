@@ -26,6 +26,12 @@
       </b-collapse>
     </b-navbar>
     <div class="container mt-5 pt-5">
+      <template v-if="$route.name !== 'index'">
+        <h5>{{ $route.name.charAt(0).toUpperCase() + $route.name.slice(1) }}</h5>
+        <!-- <b-form-checkbox name="check-button" class="mb-1" switch>
+          Expande All
+        </b-form-checkbox> -->
+      </template>
       <Nuxt />
     </div>
   </div>
@@ -35,5 +41,4 @@ export default {
   methods: {},
 };
 </script>
-<style>
-</style>
+<style></style>

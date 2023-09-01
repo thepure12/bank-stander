@@ -1,12 +1,11 @@
 <template>
-    <b-card id="general-config" class="mb-3">
-        <template #header>
-            <h5 class="mb-0">General Config</h5>
-        </template>
+    <ConfigCard title="General Config">
         <p>Type: {{ types[type] }}</p>
-    </b-card>
+    </ConfigCard>
 </template>
 <script>
+import ConfigCard from './ConfigCard.vue';
+
 export default {
     props: {
         type: { type: Number, default: 0 }
@@ -21,7 +20,8 @@ export default {
                 "Cast Spell",
                 "Use Spell on Item",
             ]
-        }
-    }
+        };
+    },
+    components: { ConfigCard }
 }
 </script>
