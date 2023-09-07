@@ -14,15 +14,6 @@
         </template>
       </b-form-select>
     </b-form-group>
-    <!-- Strung/Untrung -->
-    <b-form-group>
-      <b-form-radio-group
-        v-model="option"
-        :options="options"
-        @change="item = null"
-      >
-      </b-form-radio-group>
-    </b-form-group>
       <!-- Gem -->
     <b-form-group id="gem-group" label="Gem" label-for="gem">
       <b-form-select id="gem" v-model="gem" :options="gems">

@@ -22,6 +22,7 @@
           <!-- <b-nav-item to="/magic">Magic</b-nav-item> -->
           <b-nav-item to="/bugs">Report Bug</b-nav-item>
           <b-nav-item to="/suggestions">Suggestions</b-nav-item>
+          <b-nav-item to="/v2">v2</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
