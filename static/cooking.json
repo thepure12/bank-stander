@@ -13,6 +13,13 @@
     },
     "items": [
         {
+            "text": "Wine",
+            "value": {
+                "id": "1937",
+                "secondId": "1987"
+            }
+        },
+        {
             "text": "Chicken",
             "value": {
                 "id": 2138
