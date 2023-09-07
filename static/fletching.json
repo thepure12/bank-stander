@@ -1,0 +1,278 @@
+{
+    "unstrung": {
+        "config": {
+            "general": {
+                "type": "Use Tool on Item"
+            },
+            "item": {
+                "firstAmount": 27,
+                "secondId": 946,
+                "secondAmount": 1
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "items": [
+            {
+                "text": "Wood",
+                "value": {
+                    "id": 1511,
+                    "items": [
+                        {
+                            "text": "Arrow Shafts",
+                            "value": 17694734
+                        },
+                        {
+                            "text": "Javelin Shafts",
+                            "value": 17694735
+                        },
+                        {
+                            "text": "Shortbow",
+                            "value": 17694736
+                        },
+                        {
+                            "text": "Longbow",
+                            "value": 17694737
+                        },
+                        {
+                            "text": "Crossbow Stock",
+                            "value": 17694738
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Oak",
+                "value": {
+                    "id": 1521,
+                    "items": [
+                        {
+                            "text": "Arrow Shafts",
+                            "value": 17694734
+                        },
+                        {
+                            "text": "Shortbow",
+                            "value": 17694735
+                        },
+                        {
+                            "text": "Longbow",
+                            "value": 17694736
+                        },
+                        {
+                            "text": "Crossbow Stock",
+                            "value": 17694737
+                        },
+                        {
+                            "text": "Shield",
+                            "value": 17694738
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Willow",
+                "value": {
+                    "id": 1519,
+                    "items": [
+                        {
+                            "text": "Arrow Shafts",
+                            "value": 17694734
+                        },
+                        {
+                            "text": "Shortbow",
+                            "value": 17694735
+                        },
+                        {
+                            "text": "Longbow",
+                            "value": 17694736
+                        },
+                        {
+                            "text": "Crossbow Stock",
+                            "value": 17694737
+                        },
+                        {
+                            "text": "Shield",
+                            "value": 17694738
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Maple",
+                "value": {
+                    "id": 1517,
+                    "items": [
+                        {
+                            "text": "Arrow Shafts",
+                            "value": 17694734
+                        },
+                        {
+                            "text": "Shortbow",
+                            "value": 17694735
+                        },
+                        {
+                            "text": "Longbow",
+                            "value": 17694736
+                        },
+                        {
+                            "text": "Crossbow Stock",
+                            "value": 17694737
+                        },
+                        {
+                            "text": "Shield",
+                            "value": 17694738
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Yew",
+                "value": {
+                    "id": 1515,
+                    "items": [
+                        {
+                            "text": "Arrow Shafts",
+                            "value": 17694734
+                        },
+                        {
+                            "text": "Shortbow",
+                            "value": 17694735
+                        },
+                        {
+                            "text": "Longbow",
+                            "value": 17694736
+                        },
+                        {
+                            "text": "Crossbow Stock",
+                            "value": 17694737
+                        },
+                        {
+                            "text": "Shield",
+                            "value": 17694738
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Magic",
+                "value": {
+                    "id": 1513,
+                    "items": [
+                        {
+                            "text": "Arrow Shafts",
+                            "value": 17694734
+                        },
+                        {
+                            "text": "Shortbow",
+                            "value": 17694735
+                        },
+                        {
+                            "text": "Longbow",
+                            "value": 17694736
+                        },
+                        {
+                            "text": "Crossbow Stock",
+                            "value": 17694737
+                        },
+                        {
+                            "text": "Shield",
+                            "value": 17694738
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "strung": {
+        "config": {
+            "general": {
+                "type": "Use Item on Item"
+            },
+            "item": {
+                "firstAmount": 14,
+                "secondId": 1777,
+                "secondAmount": 14
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "items": [
+            {
+                "text": "Magic longbow",
+                "value": {
+                    "id": 70
+                }
+            },
+            {
+                "text": "Magic shortbow",
+                "value": {
+                    "id": 72
+                }
+            },
+            {
+                "text": "Maple longbow",
+                "value": {
+                    "id": 62
+                }
+            },
+            {
+                "text": "Maple shortbow",
+                "value": {
+                    "id": 64
+                }
+            },
+            {
+                "text": "Oak longbow",
+                "value": {
+                    "id": 56
+                }
+            },
+            {
+                "text": "Oak shortbow",
+                "value": {
+                    "id": 54
+                }
+            },
+            {
+                "text": "Willow longbow",
+                "value": {
+                    "id": 58
+                }
+            },
+            {
+                "text": "Willow shortbow",
+                "value": {
+                    "id": 60
+                }
+            },
+            {
+                "text": "Wood Longbow",
+                "value": {
+                    "id": 48
+                }
+            },
+            {
+                "text": "Wood Shortbow",
+                "value": {
+                    "id": 50
+                }
+            },
+            {
+                "text": "Yew longbow",
+                "value": {
+                    "id": 66
+                }
+            },
+            {
+                "text": "Yew shortbow",
+                "value": {
+                    "id": 68
+                }
+            }
+        ]
+    }
+}

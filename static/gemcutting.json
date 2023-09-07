@@ -1,0 +1,78 @@
+{
+    "config": {
+        "general": {
+            "type": "Use Tool on Item"
+        },
+        "item": {
+            "firstAmount": 27,
+            "secondId": 1755,
+            "secondAmount": 1
+        },
+        "menu": {
+            "opcode": 57,
+            "param": 17694734
+        }
+    },
+    "items": [
+        {
+            "text": "Opal",
+            "value": {
+                "id": 1625
+            }
+        },
+        {
+            "text": "Jade",
+            "value": {
+                "id": 1627
+            }
+        },
+        {
+            "text": "Red topaz",
+            "value": {
+                "id": 1629
+            }
+        },
+        {
+            "text": "Sapphire",
+            "value": {
+                "id": 1623
+            }
+        },
+        {
+            "text": "Emerald",
+            "value": {
+                "id": 1621
+            }
+        },
+        {
+            "text": "Ruby",
+            "value": {
+                "id": 1619
+            }
+        },
+        {
+            "text": "Diamond",
+            "value": {
+                "id": 1617
+            }
+        },
+        {
+            "text": "Dragonstone",
+            "value": {
+                "id": 1631
+            }
+        },
+        {
+            "text": "Onyx",
+            "value": {
+                "id": 6571
+            }
+        },
+        {
+            "text": "Zenyte",
+            "value": {
+                "id": 19496
+            }
+        }
+    ]
+}

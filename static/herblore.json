@@ -1,0 +1,639 @@
+{
+    "potion": {
+        "config": {
+            "general": {
+                "type": "Use Item on Item"
+            },
+            "item": {
+                "firstAmount": 14,
+                "secondId": 0,
+                "secondAmount": 14
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "items": [
+            {
+                "text": "Agility potion",
+                "value": {
+                    "id": 3002,
+                    "secondId": 2152
+                }
+            },
+            {
+                "text": "Anti-venom",
+                "value": {
+                    "id": 5951,
+                    "secondId": "3993 (2), 3995 (3), 3997 (4), or 3999 (5)",
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Anti-venom+",
+                "value": {
+                    "id": 12905,
+                    "secondId": 269
+                }
+            },
+            {
+                "text": "Antidote+",
+                "value": {
+                    "id": 3002,
+                    "secondId": 6049
+                }
+            },
+            {
+                "text": "Antidote++",
+                "value": {
+                    "id": 5951,
+                    "secondId": 6051
+                }
+            },
+            {
+                "text": "Antifire potion",
+                "value": {
+                    "id": 2483,
+                    "secondId": 241
+                }
+            },
+            {
+                "text": "Antipoison",
+                "value": {
+                    "id": 93,
+                    "secondId": 235
+                }
+            },
+            {
+                "text": "Attack potion",
+                "value": {
+                    "id": 91,
+                    "secondId": 221
+                }
+            },
+            {
+                "text": "Bastion potion",
+                "value": {
+                    "id": 22443,
+                    "secondId": 245
+                }
+            },
+            {
+                "text": "Battlemage potion",
+                "value": {
+                    "id": 22443,
+                    "secondId": 3138
+                }
+            },
+            {
+                "text": "Blamish oil",
+                "value": {
+                    "id": 97,
+                    "secondId": 1581
+                }
+            },
+            {
+                "text": "Combat potion",
+                "value": {
+                    "id": 97,
+                    "secondId": 9736
+                }
+            },
+            {
+                "text": "Compost potion",
+                "value": {
+                    "id": 97,
+                    "secondId": 21622
+                }
+            },
+            {
+                "text": "Defence potion",
+                "value": {
+                    "id": 99,
+                    "secondId": 239
+                }
+            },
+            {
+                "text": "Divine bastion potion",
+                "value": {
+                    "id": 22461,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Divine battlemage potion",
+                "value": {
+                    "id": 22449,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Divine magic potion",
+                "value": {
+                    "id": 3040,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Divine ranging potion",
+                "value": {
+                    "id": 2444,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Divine super attack potion",
+                "value": {
+                    "id": 2436,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Divine super combat potion",
+                "value": {
+                    "id": 12695,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Divine super defence potion",
+                "value": {
+                    "id": 2442,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Divine super strength potion",
+                "value": {
+                    "id": 2440,
+                    "secondId": 23964,
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Energy potion",
+                "value": {
+                    "id": 97,
+                    "secondId": 1975
+                }
+            },
+            {
+                "text": "Extended antifire",
+                "value": {
+                    "id": 2452,
+                    "secondId": "3250 (2), 3252 (3), 3254 (4), or 3256 (5)",
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Extended super antifire",
+                "value": {
+                    "id": 21978,
+                    "secondId": "3250 (2), 3252 (3), 3254 (4), or 3256 (5)",
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Fishing potion",
+                "value": {
+                    "id": 103,
+                    "secondId": 231
+                }
+            },
+            {
+                "text": "Guthix balance",
+                "value": {
+                    "id": 7652,
+                    "secondId": 7650
+                }
+            },
+            {
+                "text": "Hunter potion",
+                "value": {
+                    "id": 103,
+                    "secondId": 10111
+                }
+            },
+            {
+                "text": "Magic essence",
+                "value": {
+                    "id": 9019,
+                    "secondId": 9018
+                }
+            },
+            {
+                "text": "Magic potion",
+                "value": {
+                    "id": 2483,
+                    "secondId": 3138
+                }
+            },
+            {
+                "text": "Prayer potion",
+                "value": {
+                    "id": 99,
+                    "secondId": 231
+                }
+            },
+            {
+                "text": "Ranging potion",
+                "value": {
+                    "id": 109,
+                    "secondId": 245
+                }
+            },
+            {
+                "text": "Restore potion",
+                "value": {
+                    "id": 97,
+                    "secondId": 223
+                }
+            },
+            {
+                "text": "Saradomin brew",
+                "value": {
+                    "id": 3002,
+                    "secondId": 6693
+                }
+            },
+            {
+                "text": "Serum 207",
+                "value": {
+                    "id": 95,
+                    "secondId": 592
+                }
+            },
+            {
+                "text": "Shrink-me-quick",
+                "value": {
+                    "id": 95,
+                    "secondId": "11205 (1), 11206 (2), 11207 (3), 11208 (4), or 11209 (5)",
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Stamina potion",
+                "value": {
+                    "id": 3016,
+                    "secondId": "3955 (2), 3957 (3), 3959 (4), or 3961 (5)",
+                    "stackable": true
+                }
+            },
+            {
+                "text": "Strength potion",
+                "value": {
+                    "id": 95,
+                    "secondId": 225
+                }
+            },
+            {
+                "text": "Super antifire potion",
+                "value": {
+                    "id": 2452,
+                    "secondId": 21975
+                }
+            },
+            {
+                "text": "Super attack",
+                "value": {
+                    "id": 101,
+                    "secondId": 221
+                }
+            },
+            {
+                "text": "Super defence",
+                "value": {
+                    "id": 107,
+                    "secondId": 239
+                }
+            },
+            {
+                "text": "Super energy",
+                "value": {
+                    "id": 103,
+                    "secondId": 2970
+                }
+            },
+            {
+                "text": "Super restore",
+                "value": {
+                    "id": 3004,
+                    "secondId": 223
+                }
+            },
+            {
+                "text": "Super strength",
+                "value": {
+                    "id": 105,
+                    "secondId": 225
+                }
+            },
+            {
+                "text": "Superantipoison",
+                "value": {
+                    "id": 101,
+                    "secondId": 235
+                }
+            },
+            {
+                "text": "Weapon poison",
+                "value": {
+                    "id": 105,
+                    "secondId": 241
+                }
+            },
+            {
+                "text": "Weapon poison+",
+                "value": {
+                    "id": 5936,
+                    "secondId": 223
+                }
+            },
+            {
+                "text": "Weapon poison++",
+                "value": {
+                    "id": 5939,
+                    "secondId": 6018
+                }
+            },
+            {
+                "text": "Zamorak brew",
+                "value": {
+                    "id": 111,
+                    "secondId": 247
+                }
+            }
+        ]
+    },
+    "unfinished": {
+        "config": {
+            "general": {
+                "type": "Use Item on Item"
+            },
+            "item": {
+                "firstAmount": 14,
+                "secondId": 0,
+                "secondAmount": 14
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "items": [
+            {
+                "text": "Avantoe potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 261
+                }
+            },
+            {
+                "text": "Cadantine potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 265
+                }
+            },
+            {
+                "text": "Dwarf weed potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 267
+                }
+            },
+            {
+                "text": "Guam potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 249
+                }
+            },
+            {
+                "text": "Harralander potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 255
+                }
+            },
+            {
+                "text": "Irit potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 259
+                }
+            },
+            {
+                "text": "Kwuarm potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 263
+                }
+            },
+            {
+                "text": "Lantadyme potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 2481
+                }
+            },
+            {
+                "text": "Marrentill potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 251
+                }
+            },
+            {
+                "text": "Ranarr potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 257
+                }
+            },
+            {
+                "text": "Snapdragon potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 3000
+                }
+            },
+            {
+                "text": "Tarromin potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 253
+                }
+            },
+            {
+                "text": "Toadflax potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 2998
+                }
+            },
+            {
+                "text": "Torstol potion (unf)",
+                "value": {
+                    "id": 227,
+                    "secondId": 269
+                }
+            }
+        ]
+    },
+    "tar": {
+        "config": {
+            "general": {
+                "type": "Use Tool on Item"
+            },
+            "item": {
+                "firstAmount": 26,
+                "secondId": 1939,
+                "secondAmount": 1,
+                "placeholderIds": [
+                    233
+                ]
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "items": [
+            {
+                "text": "Guam tar",
+                "value": {
+                    "id": 249
+                }
+            },
+            {
+                "text": "Harralander tar",
+                "value": {
+                    "id": 255
+                }
+            },
+            {
+                "text": "Marrentill tar",
+                "value": {
+                    "id": 251
+                }
+            },
+            {
+                "text": "Tarromin tar",
+                "value": {
+                    "id": 253
+                }
+            }
+        ]
+    },
+    "clean": {
+        "config": {
+            "general": {
+                "type": "Use Item"
+            },
+            "item": {
+                "firstAmount": 28,
+                "secondId": 0,
+                "secondAmount": 0
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "items": [
+            {
+                "text": "Avantoe",
+                "value": {
+                    "id": 211
+                }
+            },
+            {
+                "text": "Cadantine",
+                "value": {
+                    "id": 215
+                }
+            },
+            {
+                "text": "Dwarf",
+                "value": {
+                    "id": 217
+                }
+            },
+            {
+                "text": "Guam",
+                "value": {
+                    "id": 199
+                }
+            },
+            {
+                "text": "Harralander",
+                "value": {
+                    "id": 205
+                }
+            },
+            {
+                "text": "Irit",
+                "value": {
+                    "id": 209
+                }
+            },
+            {
+                "text": "Kwuarm",
+                "value": {
+                    "id": 213
+                }
+            },
+            {
+                "text": "Lantadyme",
+                "value": {
+                    "id": 2485
+                }
+            },
+            {
+                "text": "Marrentill",
+                "value": {
+                    "id": 201
+                }
+            },
+            {
+                "text": "Ranarr",
+                "value": {
+                    "id": 207
+                }
+            },
+            {
+                "text": "Snapdragon",
+                "value": {
+                    "id": 3051
+                }
+            },
+            {
+                "text": "Tarromin",
+                "value": {
+                    "id": 203
+                }
+            },
+            {
+                "text": "Toadflax",
+                "value": {
+                    "id": 3049
+                }
+            },
+            {
+                "text": "Torstol",
+                "value": {
+                    "id": 219
+                }
+            }
+        ]
+    }
+}

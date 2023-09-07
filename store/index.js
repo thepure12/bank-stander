@@ -1,4 +1,5 @@
 export const state = () => ({
+    page: "",
     banks: [
         {
             text: "Grand Exchange",
@@ -36,3 +37,5 @@ export const state = () => ({
         }
     ]
 });
+
+//TODO add mutations
