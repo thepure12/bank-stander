@@ -1,0 +1,59 @@
+{
+    "config": {
+        "general": {
+            "type": "Use Tool on Item"
+        },
+        "item": {
+            "firstId": 1775,
+            "firstAmount": 27,
+            "secondId": 1785,
+            "secondAmount": 1
+        },
+        "menu": {
+            "opcode": 57,
+            "param": 17694734
+        }
+    },
+    "items": [
+        {
+            "text": "Glass",
+            "value": {
+                "id": 1775,
+                "items": [
+                    {
+                        "text": "Beer glass",
+                        "value": 17694734
+                    },
+                    {
+                        "text": "Empty candle lantern",
+                        "value": 17694735
+                    },
+                    {
+                        "text": "Empty oil lamp",
+                        "value": 17694736
+                    },
+                    {
+                        "text": "Vial",
+                        "value": 17694737
+                    },
+                    {
+                        "text": "Fishbowl",
+                        "value": 17694738
+                    },
+                    {
+                        "text": "Unpowered orb",
+                        "value": 17694739
+                    },
+                    {
+                        "text": "Lantern lens",
+                        "value": 17694740
+                    },
+                    {
+                        "text": "Empty light orb",
+                        "value": 17694741
+                    }
+                ]
+            }
+        }
+    ]
+}

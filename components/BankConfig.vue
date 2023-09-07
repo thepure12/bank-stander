@@ -1,8 +1,8 @@
 <template>
-    <ConfigCard title="Bank Config">
-        <p>Bank Type: {{ bank ? bank.type : "Npc" }}</p>
-        <p>Bank ID: {{ bank ? bank.id : 0 }}</p>
-        <p>Bank Op Code: {{ bank ? bank.opCode : 0 }}</p>
+    <ConfigCard title="Bank Config" :visible="visible">
+        <ConfigValue label="Bank Type" :value="bank ? bank.type : 'Npc'"></ConfigValue>
+        <ConfigValue label="Bank ID" :value="bank ? bank.id : 0"></ConfigValue>
+        <ConfigValue label="Bank Op Code" :value="bank ? bank.opCode : 0"></ConfigValue>
     </ConfigCard>
 </template>
 <script>
@@ -10,7 +10,8 @@ import ConfigCard from './ConfigCard.vue';
 
 export default {
     props: {
-        bank: Object
+        bank: Object,
+        visible: { type: Boolean, default: false }
     },
     components: { ConfigCard }
 }

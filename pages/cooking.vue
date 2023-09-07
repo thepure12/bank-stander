@@ -44,10 +44,11 @@ export default {
       return this.$store.state.cooking;
     },
     items() {
-      return Object.entries(this.cooking.items)
-        .map(([k, v]) => {
-          return { text: k, value: v }
-        })
+      return this.cooking.items
+      // return Object.entries(this.cooking.items)
+      //   .map(([k, v]) => {
+      //     return { text: k, value: v }
+      //   })
     },
     firstAmount() {
       return 28

@@ -1,5 +1,5 @@
 <template>
-    <ConfigCard :title="label" visible>
+    <ConfigCard :title="label" :visible="visible">
         <b-form-select id="item" :value="value" @input="v => $emit('input', v)" :options="items">
             <template #first>
                 <b-form-select-option :value="null" disabled>
@@ -16,7 +16,8 @@ export default {
     props: {
         label: { type: String, default: "Item" },
         items: Array,
-        value: Object
+        value: Object,
+        visible: { type: Boolean, default: true }
     },
     components: { ConfigCard }
 }

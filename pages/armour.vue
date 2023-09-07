@@ -81,7 +81,8 @@ export default {
       return this.sort(this.$store.state.armour.mats);
     },
     items() {
-      if (!this.mat) return [];
+      if (!this.mat)
+        return [];
       return this.mat.items.map((e, i) => ({
         text: e,
         value: parseInt(this.$store.state.armour.startParam) + i,
@@ -110,7 +111,7 @@ export default {
         })
         .map((i) => ({ text: i[0], value: i[1] }));
     },
-  },
+  }
 };
 </script>
 </script>

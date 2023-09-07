@@ -1,7 +1,7 @@
 <template>
-    <b-card id="bank-config" class="mb-3" header-class="p-0" body-class="px-2 py-1">
+    <b-card id="bank-config" class="" header-class="p-0" body-class="px-2 py-1">
         <template #header>
-            <div class="d-flex px-2 py-1" v-b-toggle="`${uuid}`">
+            <div class="d-flex px-2 pt-1" v-b-toggle="`${uuid}`">
                 <h6 class="mb-0">{{ title }}</h6>
                 <div class="ml-auto px-2 py-0" size="sm">
                     <b-icon v-if="!show" icon="chevron-expand"></b-icon>

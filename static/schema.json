@@ -1,0 +1,81 @@
+{
+    "general": {
+        "type": 0
+    },
+    "item": {
+        "firstId": 0,
+        "firstAmount": 0,
+        "secondId": 0,
+        "secondAmount": 0,
+        "placeholderIds": [
+            0,
+            0,
+            0
+        ]
+    },
+    "menu": {
+        "opCode": 0,
+        "param": 0
+    },
+    "inv": {
+        "opCode": 0
+    },
+    "banks": [
+        {
+            "text": "Bank",
+            "value": {
+                "type": "Npc",
+                "id": 0,
+                "opCode": 0,
+                "obj": 0
+            }
+        }
+    ],
+    "items": [
+        {
+            "text": "Item",
+            "value": {
+                "id": 0,
+                "items": [
+                    {
+                        "text": "Item",
+                        "value": {
+                            "id": 0,
+                            "param": 0
+                        }
+                    }
+                ],
+                "placeholders": [
+                    [
+                        {
+                            "text": "Item",
+                            "value": {
+                                "id": 0,
+                                "param": 0
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "text": "Item",
+                            "value": {
+                                "id": 0,
+                                "param": 0
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "text": "Item",
+                            "value": {
+                                "id": 0,
+                                "param": 0
+                            }
+                        }
+                    ]
+                ],
+                "outputs": []
+            }
+        }
+    ]
+}

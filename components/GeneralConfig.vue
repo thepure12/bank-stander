@@ -1,6 +1,6 @@
 <template>
-    <ConfigCard title="General Config">
-        <p>Type: {{ types[type] }}</p>
+    <ConfigCard title="General Config" :visible="visible">
+        <ConfigValue label="Type" :value="types[type]"></ConfigValue>
     </ConfigCard>
 </template>
 <script>
@@ -8,7 +8,8 @@ import ConfigCard from './ConfigCard.vue';
 
 export default {
     props: {
-        type: { type: Number, default: 0 }
+        type: { type: Number, default: 0 },
+        visible: { type: Boolean, default: false }
     },
     data() {
         return {
