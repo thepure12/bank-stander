@@ -2,7 +2,7 @@
     <div class="mb-3">
         <ConfigCardV2 v-model="bank" :items="banks" title="Bank" visible></ConfigCardV2>
         <ConfigCardV2 v-model="item" :items="armour.mats" title="Material" visible></ConfigCardV2>
-        <ConfigCardV2 v-if="item" v-model="menuParam" :items="item.items" title="Item" visible></ConfigCardV2>
+        <ConfigCardV2 v-if="item" v-model="output" :items="item.items" title="Item" visible></ConfigCardV2>
         <ConfigCardV2 v-for="(cfg, name, i) in config" :key="name" :title="getCfgTitle(name)" :config="cfg" visible>
         </ConfigCardV2>
     </div>
@@ -19,12 +19,13 @@ export default {
         return {
             armour: armour,
             banks: banks,
-            menuParam: null
+            output: null
         }
     },
     watch: {
-        menuParam() {
-            this.config.menu.param.value = this.menuParam
+        output() {
+            this.config.menu.param.value = this.output.param
+            this.config.item.firstAmount.value = 26 - 26 % this.output.leather
         }
     },
     created() {

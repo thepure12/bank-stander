@@ -24,31 +24,52 @@
                 "items": [
                     {
                         "text": "Gloves",
-                        "value": 17694734
+                        "value": {
+                            "param": 17694734,
+                            "leather": 1
+                        }
                     },
                     {
                         "text": "Boots",
-                        "value": 17694735
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
                     },
                     {
                         "text": "Cowl",
-                        "value": 17694736
+                        "value": {
+                            "param": 17694736,
+                            "leather": 1
+                        }
                     },
                     {
                         "text": "Vambraces",
-                        "value": 17694737
+                        "value": {
+                            "param": 17694737,
+                            "leather": 1
+                        }
                     },
                     {
                         "text": "Body",
-                        "value": 17694738
+                        "value": {
+                            "param": 17694738,
+                            "leather": 1
+                        }
                     },
                     {
                         "text": "Chaps",
-                        "value": 17694739
+                        "value": {
+                            "param": 17694739,
+                            "leather": 1
+                        }
                     },
                     {
                         "text": "Coif",
-                        "value": 17694740
+                        "value": {
+                            "param": 17694740,
+                            "leather": 1
+                        }
                     }
                 ]
             }
@@ -67,15 +88,24 @@
                 "items": [
                     {
                         "text": "Body",
-                        "value": 17694734
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
                     },
                     {
                         "text": "Vambraces",
-                        "value": 17694735
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
                     },
                     {
                         "text": "Chaps",
-                        "value": 17694736
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
                     }
                 ]
             }
@@ -86,18 +116,27 @@
                 "id": 2505,
                 "items": [
                     {
-                      "text": "Body",
-                      "value": 17694734
+                        "text": "Body",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
                     },
                     {
-                      "text": "Vambraces",
-                      "value": 17694735
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
                     },
                     {
-                      "text": "Chaps",
-                      "value": 17694736
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
                     }
-                  ]
+                ]
             }
         },
         {
@@ -106,18 +145,27 @@
                 "id": 2507,
                 "items": [
                     {
-                      "text": "Body",
-                      "value": 17694734
+                        "text": "Body",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
                     },
                     {
-                      "text": "Vambraces",
-                      "value": 17694735
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
                     },
                     {
-                      "text": "Chaps",
-                      "value": 17694736
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
                     }
-                  ]
+                ]
             }
         },
         {
@@ -126,18 +174,27 @@
                 "id": 2509,
                 "items": [
                     {
-                      "text": "Body",
-                      "value": 17694734
+                        "text": "Body",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
                     },
                     {
-                      "text": "Vambraces",
-                      "value": 17694735
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
                     },
                     {
-                      "text": "Chaps",
-                      "value": 17694736
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
                     }
-                  ]
+                ]
             }
         }
     ],

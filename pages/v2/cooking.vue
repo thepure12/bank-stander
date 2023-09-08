@@ -26,7 +26,7 @@ export default {
                 .then(text => {
                     text.split("\n").forEach(e => {
                         if (e.includes("ElBank")) {
-                            console.log(e);
+                            console.log(e.split);
                         }
                     })
                 })
