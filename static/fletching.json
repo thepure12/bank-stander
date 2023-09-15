@@ -274,5 +274,69 @@
                 }
             }
         ]
+    },
+    "darts": {
+        "config": {
+            "general": {
+                "type": "Use Item on Item"
+            },
+            "item": {
+                "secondId": 314
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 20447261
+            }
+        },
+        "items": [
+            {
+                "text": "Bronze Dart Tip",
+                "value": {
+                    "id": 819
+                }
+            },
+            {
+                "text": "Iron Dart Tip",
+                "value": {
+                    "id": 820
+                }
+            },
+            {
+                "text": "Steel Dart Tip",
+                "value": {
+                    "id": 821
+                }
+            },
+            {
+                "text": "Mihtril Dart Tip",
+                "value": {
+                    "id": 822
+                }
+            },
+            {
+                "text": "Adamant Dart Tip",
+                "value": {
+                    "id": 823
+                }
+            },
+            {
+                "text": "Rune Dart Tip",
+                "value": {
+                    "id": 824
+                }
+            },
+            {
+                "text": "Dragon Dart Tip",
+                "value": {
+                    "id": 11232
+                }
+            },
+            {
+                "text": "Amethyst Dart Tip",
+                "value": {
+                    "id": 25853
+                }
+            }
+        ]
     }
 }
