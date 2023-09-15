@@ -164,6 +164,15 @@
                 "opCode": 3,
                 "obj": 21302
             }
+        },
+        {
+            "text": "Rogue's Den",
+            "value": {
+                "type": "Game Object",
+                "id": 26707,
+                "opCode": 3,
+                "obj": 43475
+            }
         }
     ]
 }
