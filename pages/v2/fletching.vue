@@ -20,7 +20,8 @@ export default {
         return {
             operations: [
                 { text: "Unstrung", value: fletching.unstrung },
-                { text: "Strung", value: fletching.strung }
+                { text: "Strung", value: fletching.strung },
+                { text: "Darts", value: fletching.darts }
             ],
             banks: banks,
             menuParam: null,
