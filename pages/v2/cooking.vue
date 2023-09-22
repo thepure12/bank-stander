@@ -1,5 +1,6 @@
 <template>
     <div class="mb-3">
+        <SaveButtons @click="saveConfig"></SaveButtons>
         <ConfigCardV2 v-model="bank" :items="cooking.banks" title="Bank"></ConfigCardV2>
         <ConfigCardV2 v-model="item" :items="cooking.items" title="Item"></ConfigCardV2>
         <ConfigCardV2 v-for="(cfg, name, i) in config" :key="name" :title="getCfgTitle(name)" :config="cfg"></ConfigCardV2>

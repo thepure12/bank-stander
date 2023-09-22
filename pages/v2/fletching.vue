@@ -1,5 +1,6 @@
 <template>
     <div class="mb-3">
+        <SaveButtons @click="saveConfig"></SaveButtons>
         <b-form-radio-group v-model="operation" :options="operations" @change="onSelect"></b-form-radio-group>
         <ConfigCardV2 v-model="bank" :items="banks" title="Bank" visible></ConfigCardV2>
         <ConfigCardV2 v-model="item" :items="operation.items" title="Item" visible></ConfigCardV2>

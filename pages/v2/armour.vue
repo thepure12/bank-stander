@@ -1,5 +1,6 @@
 <template>
     <div class="mb-3">
+        <SaveButtons @click="saveConfig"></SaveButtons>
         <ConfigCardV2 v-model="bank" :items="banks" title="Bank" visible></ConfigCardV2>
         <ConfigCardV2 v-model="item" :items="armour.mats" title="Material" visible></ConfigCardV2>
         <ConfigCardV2 v-if="item" v-model="output" :items="item.items" title="Item" visible></ConfigCardV2>
