@@ -2,6 +2,7 @@
     <div class="mb-1">
         <b-btn size="sm" @click="$emit('click')">Save Setup</b-btn>
         <b-btn size="sm" variant="info" v-b-modal.save-help>Save Help</b-btn>
+        <span class="text-info h6"><== Please Read</span>
         <b-modal id="save-help" size="xl" title="Save Help" header-class="bg-dark text-white" ok-title="Close" ok-only>
             <b-card header-class="h5">
                 <template #header>Selecting Properties File</template>
