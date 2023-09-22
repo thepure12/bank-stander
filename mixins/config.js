@@ -151,7 +151,7 @@ export default {
             else if (this.properties && this.fileHandle) {
                 let newProperties = Object.assign({}, this.properties)
                 // General
-                newProperties["ElBankStander.type"] = ''
+                newProperties["ElBankStander.type"] = '' + this.config.general.type.value.replaceAll(" ", "_").toUpperCase()
                 // Item
                 newProperties["ElBankStander.firstId"] = '' + this.config.item.firstId.value
                 newProperties["ElBankStander.firstAmount"] = '' + this.config.item.firstAmount.value
