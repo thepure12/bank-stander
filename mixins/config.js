@@ -123,7 +123,7 @@ export default {
                 types: [
                     {
                         description: "Properties",
-                        accept: {"text/properties": ".properties"}
+                        accept: { "text/properties": ".properties" }
                     }
                 ]
             })
@@ -135,6 +135,11 @@ export default {
                         file.text()
                             .then(text => {
                                 this.properties = Properties.parseToProperties(text);
+                                this.$bvToast.toast(`You can now save your config.`, {
+                                    title: 'File Loaded',
+                                    variant: "warning",
+                                    solid: true
+                                })
                             });
                     });
             }
@@ -143,7 +148,7 @@ export default {
             if (!this.fileHandle) {
                 await this.selectFile()
             }
-            if (this.properties && this.fileHandle) {
+            else if (this.properties && this.fileHandle) {
                 let newProperties = Object.assign({}, this.properties)
                 // General
                 newProperties["ElBankStander.type"] = ''

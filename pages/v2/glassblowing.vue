@@ -1,5 +1,6 @@
 <template>
     <div class="mb-3">
+        <SaveButtons @click="saveConfig"></SaveButtons>
         <ConfigCardV2 v-model="bank" :items="banks" title="Bank" visible></ConfigCardV2>
         <!-- <ConfigCardV2 v-model="item" :items="operation.items" title="Item" visible></ConfigCardV2> -->
         <ConfigCardV2 v-if="item && item.items" v-model="menuParam" :items="item.items" title="Item" visible></ConfigCardV2>

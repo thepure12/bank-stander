@@ -1,5 +1,6 @@
 <template>
     <div class="mb-3">
+        <SaveButtons @click="saveConfig"></SaveButtons>
         <ConfigCardV2 v-model="bank" :items="jewelry.banks" title="Bank"></ConfigCardV2>
         <ConfigCardV2 v-model="item" :items="jewelry.items" title="Bar"></ConfigCardV2>
         <ConfigCardV2 v-if="item && item.items" v-model="tool" :items="item.items" title="Gem"></ConfigCardV2>
