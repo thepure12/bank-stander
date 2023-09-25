@@ -8,6 +8,7 @@
             <ConfigCardV2 v-if="item && item.items" v-model="output" :items="item.items" title="Item" visible>
             </ConfigCardV2>
         </template>
+        <ConfigCardV2 v-else v-model="placeholders[0]" :items="cannonballs.placeholders" title="Mould"></ConfigCardV2>
         <ConfigCardV2 v-for="(cfg, name, i) in config" :key="name" :title="getCfgTitle(name)" :config="cfg" visible>
         </ConfigCardV2>
     </div>

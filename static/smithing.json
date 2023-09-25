@@ -1195,6 +1195,20 @@
                 "param": 17694734
             }
         },
+        "placeholders": [
+            {
+                "text": "Ammo Mould",
+                "value": {
+                    "id": 4
+                }
+            },
+            {
+                "text": "Double Ammo Mould",
+                "value": {
+                    "id": 27012
+                }
+            }
+        ],
         "banks": [
             {
                 "text": "Edgeville",
