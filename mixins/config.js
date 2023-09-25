@@ -198,6 +198,7 @@ export default {
     },
     watch: {
         bank(bank) {
+            if (!bank) return
             this.config.bank.id.value = bank.id
             this.config.bank.type.value = bank.type
             this.config.bank.opcode.value = bank.opCode
