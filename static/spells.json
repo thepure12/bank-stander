@@ -1,0 +1,15 @@
+{
+    "alching": {
+        "config": {
+            "general": {
+                "spellOnItem": "High Level Alchemy"
+            },
+            "item": {
+                "firstAmount": 27,
+                "placeholderIds": [
+                    561
+                ]
+            }
+        }
+    }
+}
