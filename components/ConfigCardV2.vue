@@ -16,20 +16,31 @@
                         <ConfigValue v-for="(v2, j) in v" :key="v2.label + j" :label="v2.label" :value="v2.value">
                         </ConfigValue>
                     </template>
-                    <template v-else>
+                    <template v-else-if="v.value !== 'Any'">
                         <!-- <img :src="`https://www.itemdb.biz/images/icons/${v.value}.png`" alt=""> -->
                         <ConfigValue :key="k + i" :label="v.label" :value="v.value"></ConfigValue>
                     </template>
                 </template>
             </template>
             <template v-if="items">
-                <b-form-select id="item" :value="value" @input="v => $emit('input', v)" :options="items">
-                    <template #first>
-                        <b-form-select-option :value="null" disabled>
-                            -- Please select an option --
-                        </b-form-select-option>
-                    </template>
-                </b-form-select>
+                <template v-if="vselect">
+                    <v-select :value="value" @input="v => $emit('input', v)" label="text" :reduce="item => item.value"
+                        :options="items" placeholder="-- Please select and option --"
+                        @search="(search, loading) => $emit('search', search, loading)">
+                        <template #no-options="{ search, searching, loading }">
+                            Search must be 3 or more characers.
+                        </template>
+                    </v-select>
+                </template>
+                <template v-else>
+                    <b-form-select id="item" :value="value" @input="v => $emit('input', v)" :options="items">
+                        <template #first>
+                            <b-form-select-option :value="null" disabled>
+                                -- Please select an option --
+                            </b-form-select-option>
+                        </template>
+                    </b-form-select>
+                </template>
             </template>
         </b-collapse>
     </b-card>
@@ -43,7 +54,8 @@ export default {
         visible: { type: Boolean, default: true },
         config: Object,
         items: Array,
-        value: [Object, String, Number]
+        value: [Object, String, Number],
+        vselect: { type: Boolean, default: false }
     },
     components: {
         BIcon,

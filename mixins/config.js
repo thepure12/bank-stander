@@ -1,3 +1,4 @@
+// ✓
 import Properties from '@js.properties/properties'
 export default {
     data() {
@@ -6,6 +7,10 @@ export default {
                 general: {
                     type: {
                         label: "Type",
+                        value: "Any"
+                    },
+                    spellOnItem: {
+                        label: "Spell (On Item)",
                         value: "Any"
                     }
                 },
@@ -17,6 +22,10 @@ export default {
                     firstAmount: {
                         label: "First Amount",
                         value: 0
+                    },
+                    useSecond: {
+                        label: "Use Second Item",
+                        value: "☐"
                     },
                     secondId: {
                         label: "Second/Tool ID",
@@ -155,8 +164,10 @@ export default {
                 // Item
                 newProperties["ElBankStander.firstId"] = '' + this.config.item.firstId.value
                 newProperties["ElBankStander.firstAmount"] = '' + this.config.item.firstAmount.value
+                newProperties["ElBankStander.useSecond"] = this.config.item.firstAmount.value ? "true" : "false"
                 newProperties["ElBankStander.secondId"] = '' + this.config.item.secondId.value
                 newProperties["ElBankStander.secondAmount"] = '' + this.config.item.secondAmount.value
+                newProperties["ElBankStander.usePlaceholders"] = this.config.item.placeholderIds[0].value ? "true" : "false"
                 newProperties["ElBankStander.placeholder1Id"] = '' + this.config.item.placeholderIds[0].value
                 newProperties["ElBankStander.placeholder2Id"] = '' + this.config.item.placeholderIds[1].value
                 newProperties["ElBankStander.placeholder3Id"] = '' + this.config.item.placeholderIds[2].value
@@ -171,6 +182,9 @@ export default {
                 newProperties["ElBankStander.menuParam1"] = '' + this.config.menu.param.value
                 // Inventory
                 newProperties["ElBankStander.inventoryOp"] = '' + this.config.inventory.opcode.value
+                // Start
+                newProperties["ElBankStander.startButton"] = '' + "false"
+
 
                 this.properties = newProperties
                 this.fileHandle.createWritable()
@@ -205,17 +219,19 @@ export default {
             this.config.object.id.value = bank.obj || 0
         },
         item(item) {
-            this.config.item.firstId.value = item.id
-            if (item.secondId) {
-                this.config.item.secondId.value = item.secondId
-                if (item.stackable) {
-                    this.config.general.type.value = "Use Tool on Item"
-                    this.config.item.firstAmount.value = 27
-                    this.config.item.secondAmount.value = 1
-                } else {
-                    this.config.general.type.value = "Use Item on Item"
-                    this.config.item.firstAmount.value = 14
-                    this.config.item.secondAmount.value = 14
+            if (item) {
+                this.config.item.firstId.value = item.id
+                if (item.secondId) {
+                    this.config.item.secondId.value = item.secondId
+                    if (item.stackable) {
+                        this.config.general.type.value = "Use Tool on Item"
+                        this.config.item.firstAmount.value = 27
+                        this.config.item.secondAmount.value = 1
+                    } else {
+                        this.config.general.type.value = "Use Item on Item"
+                        this.config.item.firstAmount.value = 14
+                        this.config.item.secondAmount.value = 14
+                    }
                 }
             }
         },
