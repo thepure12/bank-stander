@@ -547,6 +547,9 @@
             "menu": {
                 "opcode": 57,
                 "param": 17694734
+            },
+            "inventory": {
+                "opcode": 2
             }
         },
         "items": [
