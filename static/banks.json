@@ -30,5 +30,13 @@
         "id": 28861,
         "opCode": 3
       }
+    },
+    {
+      "text": "Clan Hall",
+      "value": {
+        "type": "Npc",
+        "id": 10737,
+        "opCode": 11
+      }
     }
   ]
