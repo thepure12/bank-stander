@@ -24,7 +24,7 @@
                     <b-nav-item to="/v2/spells">Spells</b-nav-item>
                     <b-nav-item to="/bugs">Report Bug</b-nav-item>
                     <b-nav-item to="/suggestions">Suggestions</b-nav-item>
-                    <b-nav-item to="/v1">v1</b-nav-item>
+                    <!-- <b-nav-item to="/v1">v1</b-nav-item> -->
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
