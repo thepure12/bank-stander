@@ -9,6 +9,7 @@
                 <b-navbar-nav class="text-white">
                     <b-nav-item to="/v2/">Home</b-nav-item>
                     <b-nav-item to="/v2/banks">Banks</b-nav-item>
+                    <b-nav-item to="/v2/items">Items</b-nav-item>
                     <b-nav-item to="/v2/smithing">Smithing</b-nav-item>
                     <b-nav-item to="/v2/cooking">Cooking</b-nav-item>
                     <b-nav-item to="/v2/herblore">Herblore</b-nav-item>
