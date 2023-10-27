@@ -10,6 +10,7 @@
             </div>
         </template>
         <b-collapse :id="uuid" v-model="show">
+            <slot></slot>
             <template v-if="config">
                 <template v-for="(v, k, i) in config">
                     <template v-if="(v instanceof Array)">
