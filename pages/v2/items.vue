@@ -3,22 +3,25 @@
         <b-form-group label-for="filter-input">
             <b-input-group size="sm">
                 <b-form-input id="filter-input" v-model="filter" type="search" placeholder="Type to Search" debounce="500"
-                    @input="isFiltering = true"></b-form-input>
+                    @input="isFiltering = true; currentPage = 1"></b-form-input>
                 <b-input-group-append>
                     <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
                 </b-input-group-append>
             </b-input-group>
         </b-form-group>
-        <b-pagination v-model="currentPage" :total-rows="items.length" :per-page="perPage" pills
-            aria-controls="items"></b-pagination>
-        <b-table id="items" :items="items" :per-page="perPage" :current-page="currentPage" :filter="filter"
+        <!-- <b-pagination v-model="currentPage" :total-rows="items.length" :per-page="perPage" pills
+            aria-controls="items"></b-pagination> -->
+        <b-table id="items" :items="items" :fields="fields" :per-page="perPage" :current-page="currentPage" :filter="filter"
             :filter-ignored-fields="ignoredFields" :busy="isFiltering" @filtered="isFiltering = false"
             :filter-function="filterFunc" @row-clicked="copyId">
+            <template #cell(image)="data">
+                <img :src="`https://osrs-item-imgs--thepure12.repl.co/${data.item.id}`" alt="" class="mr-1">
+            </template>
             <template #cell(id)="data">
-                <span v-b-tooltip.hover.right="'Copy to clipboard.'" class="hoverable" @click="copyId(data.item)">
-                    <b-icon icon="clipboard" class="mr-1 text-primary"></b-icon>
-                    {{ data.value }}
-                </span>
+                <!-- <span v-b-tooltip.hover.right="'Copy to clipboard.'" class="hoverable" @click="copyId(data.item)">-->
+                <b-icon icon="clipboard" class="mr-1 text-primary"></b-icon>
+                {{ data.value }}
+                <!-- </span> -->
             </template>
             <template #table-busy>
                 <div class="text-center text-success my-2">
@@ -42,7 +45,8 @@ export default {
             items: [],
             filter: "",
             ignoredFields: ["type", "duplicate"],
-            isFiltering: false
+            isFiltering: false,
+            fields: ["image", "id", "name", "type", "duplicate"]
         }
     },
     computed: {
@@ -75,7 +79,8 @@ export default {
 }
 </script>
 <style>
-.hoverable:hover, tr:hover {
+.hoverable:hover,
+tr:hover {
     cursor: pointer;
 }
 </style>
