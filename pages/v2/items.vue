@@ -13,9 +13,12 @@
             aria-controls="items"></b-pagination>
         <b-table id="items" :items="items" :per-page="perPage" :current-page="currentPage" :filter="filter"
             :filter-ignored-fields="ignoredFields" :busy="isFiltering" @filtered="isFiltering = false"
-            :filter-function="filterFunc">
+            :filter-function="filterFunc" @row-clicked="copyId">
             <template #cell(id)="data">
-                {{ data.value }}
+                <span v-b-tooltip.hover.right="'Copy to clipboard.'" class="hoverable" @click="copyId(data.item)">
+                    <b-icon icon="clipboard" class="mr-1 text-primary"></b-icon>
+                    {{ data.value }}
+                </span>
             </template>
             <template #table-busy>
                 <div class="text-center text-success my-2">
@@ -27,9 +30,11 @@
     </div>
 </template>
 <script>
+import { BIcon, BIconClipboard } from "bootstrap-vue"
 export default {
     name: "Items",
     layout: "layoutv2",
+    components: { BIcon, BIconClipboard },
     data() {
         return {
             perPage: 25,
@@ -40,9 +45,24 @@ export default {
             isFiltering: false
         }
     },
+    computed: {
+        idClass() {
+            return this.copied ? "text-success" : ""
+        },
+    },
     methods: {
         filterFunc(data, filter) {
             return data.id == filter || data.name.toLowerCase().includes(filter.toLowerCase())
+        },
+        copyId(item) {
+            navigator.clipboard.writeText(item.id)
+            this.$bvToast.toast(`ID for ${item.name} copied to clipboard.`, {
+                title: "Copied",
+                autoHideDelay: 2000,
+                variant: "success",
+                toaster: "b-toaster-top-center",
+                solid: true
+            })
         }
     },
     created() {
@@ -50,8 +70,12 @@ export default {
             .then(res => {
                 this.items = Object.values(res.data)
                     .filter(item => item.type === "normal" || item.type === "noted" || item.duplicate === false)
-                // .map(item => ({ text: `${item.name} (${item.type})`, value: { id: item.id } }))
             })
     }
 }
 </script>
+<style>
+.hoverable:hover, tr:hover {
+    cursor: pointer;
+}
+</style>
