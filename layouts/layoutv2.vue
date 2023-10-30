@@ -21,7 +21,7 @@
                         <b-dropdown-item to="/v2/armour">Armour</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <!-- <b-nav-item to="/v2/combat">Combat</b-nav-item> -->
-                    <b-nav-item to="/v2/spells">Spells</b-nav-item>
+                    <b-nav-item to="/v2/spells">Alch</b-nav-item>
                     <b-nav-item to="/bugs">Report Bug</b-nav-item>
                     <b-nav-item to="/suggestions">Suggestions</b-nav-item>
                     <!-- <b-nav-item to="/v1">v1</b-nav-item> -->
