@@ -12,8 +12,23 @@
                     <b-button :disabled="!alchFilter" @click="alchFilter = ''">Clear</b-button>
                 </b-input-group-append>
             </b-input-group>
-            <b-table :items="sortedAlchItems" :fields="alchFields" per-page="5" :filter="alchFilter" :busy="alchBusy" small
-                selectable select-mode="single" @row-selected="(item) => itemFilter = item[0].name">
+            <div class="d-flex">
+                <b-form class="my-1 mx-auto" inline>
+                    <!-- Limit -->
+                    <label class="mx-2">GE Limit</label>
+                    <b-form-input v-model="geLimit" size="sm" placeholder="GE Restriction" type="number"></b-form-input>
+                    <!-- Price -->
+                    <label class="mx-2">Max Price</label>
+                    <b-form-input v-model="gePrice" size="sm" placeholder="Max Price" type="number"></b-form-input>
+                    <!-- Volume -->
+                    <label class="mx-2">Min Volume</label>
+                    <b-form-input v-model="geVolume" size="sm" placeholder="Min Volume" type="number"></b-form-input>
+                    <!-- Members -->
+                    <b-form-checkbox v-model="geMembers" class="mx-2">Members</b-form-checkbox>
+                </b-form>
+            </div>
+            <b-table :items="filteredAlchItems" :fields="alchFields" per-page="5" :filter="alchFilter" :busy="alchBusy"
+                small selectable select-mode="single" @row-selected="(item) => itemFilter = item[0].name">
                 <template #cell(profit)="data">
                     {{ data.item.high_alch_value - data.item.buy_price - natPrice }}
                 </template>
@@ -38,7 +53,7 @@ import banks from '~/static/banks.json'
 import config from '~/mixins/config.js'
 import SaveButtons from '~/components/SaveButtons.vue'
 export default {
-    name: "Spells",
+    name: "Alch",
     layout: "layoutv2",
     mixins: [config],
     data() {
@@ -49,9 +64,13 @@ export default {
             item: null,
             itemFilter: "",
             alchItems: [],
-            alchFields: ["name", "buy_price", "high_alch_value", "ge_restriction", "profit"],
+            alchFields: ["name", "buy_price", "high_alch_value", "sell_volume", "ge_restriction", "profit"],
             alchFilter: "",
-            alchBusy: true
+            alchBusy: true,
+            geLimit: 0,
+            gePrice: 0,
+            geVolume: 0,
+            geMembers: true
         };
     },
     computed: {
@@ -70,6 +89,21 @@ export default {
                 return profitB - profitA
             })
             return sorted
+        },
+        filteredAlchItems() {
+            let filtered = this.sortedAlchItems.filter((item) => {
+                if (parseInt(item.ge_restriction) < this.geLimit) {
+                    return false
+                } else if (this.gePrice > 0 && parseInt(item.buy_price) > this.gePrice) {
+                    return false
+                } else if (parseInt(item.sell_volume) < this.geVolume) {
+                    return false
+                } else if (!this.geMembers && item.members_only == 1) {
+                    return false
+                }
+                return true
+            })
+            return filtered
         },
         natPrice() {
             return this.alchItems.find(item => item.itemid === 561).buy_price
