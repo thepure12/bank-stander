@@ -23,8 +23,8 @@ export default {
     computed: {
         menuParam() {
             if (this.tool && this.placeholders[0]) {
-                let param = this.jewelry.config.menu.param + this.tool.menuOffset + this.placeholders[0].menuOffset
-                if (this.placeholders[0].id === 11065 && this.tool.id !== 2357) {
+                let param = this.item.param + this.tool.menuOffset + this.placeholders[0].menuOffset
+                if (this.placeholders[0].id === 11065 && this.tool.id !== 2357 && this.item.id === 2357) {
                     param += 1
                 }
                 return param
@@ -34,6 +34,10 @@ export default {
     watch: {
         menuParam() {
             this.config.menu.param.value = this.menuParam
+        },
+        item() {
+            this.tool = this.item.items[0].value
+            this.placeholders[0] = this.item.placeholders[0].value
         }
     },
     created() {
@@ -42,7 +46,7 @@ export default {
     mounted() {
         this.item = this.jewelry.items[0].value
         this.tool = this.item.items[0].value
-        this.placeholders[0] = this.jewelry.placeholders[0].value
+        this.placeholders[0] = this.item.placeholders[0].value
     }
 }
 </script>

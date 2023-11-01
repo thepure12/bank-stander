@@ -17,6 +17,7 @@
             "text": "Gold",
             "value": {
                 "id": 2357,
+                "param": 29229064,
                 "items": [
                     {
                         "text": "None",
@@ -81,37 +82,103 @@
                             "menuOffset": 6
                         }
                     }
+                ],
+                "placeholders": [
+                    {
+                        "text": "Ring",
+                        "value": {
+                            "id": 1592,
+                            "menuOffset": 0
+                        }
+                    },
+                    {
+                        "text": "Necklace",
+                        "value": {
+                            "id": 1597,
+                            "menuOffset": 15
+                        }
+                    },
+                    {
+                        "text": "Amulet",
+                        "value": {
+                            "id": 1595,
+                            "menuOffset": 29
+                        }
+                    },
+                    {
+                        "text": "Bracelet",
+                        "value": {
+                            "id": 11065,
+                            "menuOffset": 42
+                        }
+                    }
                 ]
             }
-        }
-    ],
-    "placeholders": [
-        {
-            "text": "Ring",
-            "value": {
-                "id": 1592,
-                "menuOffset": 0
-            }
         },
         {
-            "text": "Necklace",
+            "text": "Silver",
             "value": {
-                "id": 1597,
-                "menuOffset": 15
-            }
-        },
-        {
-            "text": "Amulet",
-            "value": {
-                "id": 1595,
-                "menuOffset": 29
-            }
-        },
-        {
-            "text": "Bracelet",
-            "value": {
-                "id": 11065,
-                "menuOffset": 42
+                "id": 2355,
+                "param": 393223,
+                "items": [
+                    {
+                        "text": "Opal",
+                        "value": {
+                            "id": 1609,
+                            "menuOffset": 0,
+                            "firstAmount": 13,
+                            "secondAmount": 13
+                        }
+                    },
+                    {
+                        "text": "Jade",
+                        "value": {
+                            "id": 1611,
+                            "menuOffset": 1,
+                            "firstAmount": 13,
+                            "secondAmount": 13
+                        }
+                    },
+                    {
+                        "text": "Red Topaz",
+                        "value": {
+                            "id": 1613,
+                            "menuOffset": 2,
+                            "firstAmount": 13,
+                            "secondAmount": 13
+                        }
+                    }
+                ],
+                "placeholders": [
+                    {
+                        "text": "Ring",
+                        "value": {
+                            "id": 1592,
+                            "menuOffset": 0
+                        }
+                    },
+                    {
+                        "text": "Necklace",
+                        "value": {
+                            "id": 1597,
+                            "menuOffset": 4
+                        }
+                    },
+                    {
+                        "text": "Amulet",
+                        "value": {
+                            "id": 1595,
+                            "menuOffset": 8
+                        }
+                    },
+                    {
+                        "text": "Bracelet",
+                        "value": {
+                            "id": 11065,
+                            "menuOffset": 12
+                        }
+                    }
+                ]
             }
         }
     ],
