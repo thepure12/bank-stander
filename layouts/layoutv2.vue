@@ -26,6 +26,11 @@
                     <b-nav-item to="/suggestions">Suggestions</b-nav-item>
                     <!-- <b-nav-item to="/v1">v1</b-nav-item> -->
                 </b-navbar-nav>
+                <b-navbar-nav class="ml-auto">
+                    <a href="https://www.buymeacoffee.com/thepure12" target="_blank"><img
+                            src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee"
+                            style="height: 40px !important;"></a>
+                </b-navbar-nav>
             </b-collapse>
         </b-navbar>
         <div class="container mt-5 pt-5">
