@@ -1,0 +1,42 @@
+{
+    "config": {
+        "general": {
+            "type": "Use Item on Item"
+        },
+        "item": {
+            "firstAmount": 14,
+            "secondId": 1391,
+            "secondAmount": 14
+        },
+        "menu": {
+            "opcode": 57,
+            "param": 17694734
+        }
+    },
+    "items": [
+        {
+            "text": "Air",
+            "value": {
+                "id": 573
+            }
+        },
+        {
+            "text": "Water",
+            "value": {
+                "id": 571
+            }
+        },
+        {
+            "text": "Earth",
+            "value": {
+                "id": 575
+            }
+        },
+        {
+            "text": "Fire",
+            "value": {
+                "id": 569
+            }
+        }
+    ]
+}
