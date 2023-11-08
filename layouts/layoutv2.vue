@@ -19,6 +19,7 @@
                         <b-dropdown-item to="/v2/glassblowing">Glassblowing</b-dropdown-item>
                         <b-dropdown-item to="/v2/gemcutting">Gem Cutting</b-dropdown-item>
                         <b-dropdown-item to="/v2/armour">Armour</b-dropdown-item>
+                        <b-dropdown-item to="/v2/staves">Staves</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <!-- <b-nav-item to="/v2/combat">Combat</b-nav-item> -->
                     <b-nav-item to="/v2/spells">Alch</b-nav-item>
