@@ -8,27 +8,33 @@
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="text-white">
                     <b-nav-item to="/v2/">Home</b-nav-item>
+                    <b-nav-item-dropdown text="Plugins">
+                        <b-dropdown-item to="/v2">Bank Stander</b-dropdown-item>
+                        <b-dropdown-item to="/skiller">Skiller</b-dropdown-item>
+                        <b-dropdown-item to="/shopper">Shopper</b-dropdown-item>
+                    </b-nav-item-dropdown>
                     <b-nav-item to="/v2/banks">Banks</b-nav-item>
                     <b-nav-item to="/v2/items">Items</b-nav-item>
-                    <b-nav-item to="/v2/smithing">Smithing</b-nav-item>
-                    <b-nav-item to="/v2/cooking">Cooking</b-nav-item>
-                    <b-nav-item to="/v2/herblore">Herblore</b-nav-item>
-                    <b-nav-item to="/v2/fletching">Fletching</b-nav-item>
-                    <b-nav-item-dropdown text="Crafting">
-                        <b-dropdown-item to="/v2/jewelry">Jewelry</b-dropdown-item>
-                        <b-dropdown-item to="/v2/glassblowing">Glassblowing</b-dropdown-item>
-                        <b-dropdown-item to="/v2/gemcutting">Gem Cutting</b-dropdown-item>
-                        <b-dropdown-item to="/v2/armour">Armour</b-dropdown-item>
-                        <b-dropdown-item to="/v2/staves">Staves</b-dropdown-item>
-                    </b-nav-item-dropdown>
-                    <!-- <b-nav-item to="/v2/combat">Combat</b-nav-item> -->
-                    <b-nav-item to="/v2/spells">Alch</b-nav-item>
+                    <template v-if="$route.name.includes('v2')">
+                        <b-nav-item to="/v2/smithing">Smithing</b-nav-item>
+                        <b-nav-item to="/v2/cooking">Cooking</b-nav-item>
+                        <b-nav-item to="/v2/herblore">Herblore</b-nav-item>
+                        <b-nav-item to="/v2/fletching">Fletching</b-nav-item>
+                        <b-nav-item-dropdown text="Crafting">
+                            <b-dropdown-item to="/v2/jewelry">Jewelry</b-dropdown-item>
+                            <b-dropdown-item to="/v2/glassblowing">Glassblowing</b-dropdown-item>
+                            <b-dropdown-item to="/v2/gemcutting">Gem Cutting</b-dropdown-item>
+                            <b-dropdown-item to="/v2/armour">Armour</b-dropdown-item>
+                            <b-dropdown-item to="/v2/staves">Staves</b-dropdown-item>
+                        </b-nav-item-dropdown>
+                        <!-- <b-nav-item to="/v2/combat">Combat</b-nav-item> -->
+                        <b-nav-item to="/v2/spells">Alch</b-nav-item>
+                    </template>
                     <b-nav-item href="https://pureaccounts.me/" target="_blank">Accounts</b-nav-item>
                     <b-nav-item-dropdown text="Feedback">
-                        <b-nav-item to="/bugs">Report Bug</b-nav-item>
-                        <b-nav-item to="/suggestions">Suggestions</b-nav-item>
+                        <b-dropdown-item to="/bugs">Report Bug</b-dropdown-item>
+                        <b-dropdown-item to="/suggestions">Suggestions</b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <!-- <b-nav-item to="/v1">v1</b-nav-item> -->
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
                     <a href="https://www.buymeacoffee.com/thepure12" target="_blank"><img
