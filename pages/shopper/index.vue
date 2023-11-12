@@ -7,7 +7,7 @@
                     {{ item.text }} {{ item.value.stock }}
                 </b-form-checkbox>
             </b-form-checkbox-group> -->
-            <b-table v-if="shop" :items="shop.items" :fields="fields" @row-selected="onRowSelected" small responsive>
+            <b-table v-if="shop" :items="shop.items" :fields="fields" small responsive>
                 <template #cell(buy_ammount)="data">
                     <b-form-input v-model="data.item.buy_amount" type="number" size="sm" min="0" :max="data.item.stock"
                         placeholder="0"></b-form-input>
