@@ -1,0 +1,105 @@
+{
+    "config": {
+        "general": {
+            "shop": "Custom"
+        }
+    },
+    "shops": [
+        {
+            "text": "Lundail's Arena-side Rune Shop",
+            "value": {
+                "id": 573,
+                "name": "Lundail",
+                "location": "2534,4716",
+                "option": "Third",
+                "items": [
+                    {
+                        "item": "Fire Rune",
+                        "slot": 1,
+                        "stock": 200
+                    },
+                    {
+                        "item": "Water Rune",
+                        "slot": 2,
+                        "stock": 200
+                    },
+                    {
+                        "item": "Air Rune",
+                        "slot": 3,
+                        "stock": 200
+                    },
+                    {
+                        "item": "Earth Rune",
+                        "slot": 4,
+                        "stock": 200
+                    },
+                    {
+                        "item": "Mind Rune",
+                        "slot": 5,
+                        "stock": 140
+                    },
+                    {
+                        "item": "Body Rune",
+                        "slot": 6,
+                        "stock": 140
+                    },
+                    {
+                        "item": "Nature Rune",
+                        "slot": 7,
+                        "stock": 250
+                    },
+                    {
+                        "item": "Chaos Rune",
+                        "slot": 8,
+                        "stock": 250
+                    },
+                    {
+                        "item": "Law Rune",
+                        "slot": 9,
+                        "stock": 250
+                    },
+                    {
+                        "item": "Cosmic Rune",
+                        "slot": 10,
+                        "stock": 20
+                    },
+                    {
+                        "item": "Death Rune",
+                        "slot": 11,
+                        "stock": 250
+                    },
+                    {
+                        "item": "Fire Rune Pack",
+                        "slot": 12,
+                        "stock": 5
+                    },
+                    {
+                        "item": "Water Rune Pack",
+                        "slot": 13,
+                        "stock": 5
+                    },
+                    {
+                        "item": "Air Rune Pack",
+                        "slot": 14,
+                        "stock": 5
+                    },
+                    {
+                        "item": "Earth Rune Pack",
+                        "slot": 15,
+                        "stock": 5
+                    },
+                    {
+                        "item": "Mind Rune Pack",
+                        "slot": 16,
+                        "stock": 4
+                    },
+                    {
+                        "item": "Chaos Rune Pack",
+                        "slot": 17,
+                        "stock": 3
+                    }
+                ]
+            }
+        }
+    ]
+}
