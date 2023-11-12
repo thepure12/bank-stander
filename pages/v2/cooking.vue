@@ -18,6 +18,15 @@ export default {
             cooking: cooking,
         }
     },
+    watch: {
+        item() {
+            if (this.item.param) {
+                this.config.menu.param.value = this.item.param
+            } else {
+                this.config.menu.param.value = this.cooking.config.menu.param
+            }
+        }
+    },
     created() {
         this.setDefaultConfig(this.cooking.config)
     }
