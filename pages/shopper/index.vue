@@ -2,15 +2,12 @@
     <div class="mb-3">
         <ConfigCardV2 v-model="shop" :items="shopper.shops" title="Shops" visible vselect></ConfigCardV2>
         <ConfigCardV2 title="Items" visible>
-            <!-- <b-form-checkbox-group v-if="shop" v-model="items" stacked>
-                <b-form-checkbox v-for="item in shop.items" :value="item.value" :key="item.text">
-                    {{ item.text }} {{ item.value.stock }}
-                </b-form-checkbox>
-            </b-form-checkbox-group> -->
             <b-table v-if="shop" :items="shop.items" :fields="fields" small responsive>
                 <template #cell(buy_ammount)="data">
                     <b-form-input v-model="data.item.buy_amount" type="number" size="sm" min="0" :max="data.item.stock"
-                        placeholder="0"></b-form-input>
+                        placeholder="0"
+                        :state="data.item.buy_amount ? data.item.buy_amount >= 0 && data.item.buy_amount <= data.item.stock : null"
+                        no-wheel></b-form-input>
                 </template>
             </b-table>
         </ConfigCardV2>
