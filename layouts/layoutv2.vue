@@ -1,8 +1,9 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
-            <b-navbar-brand>
+            <b-navbar-brand class="py-0">
                 <!-- <Logo width="200px" height="" /> -->
+                <img src="/logo.png" alt="" class="logo">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -63,4 +64,12 @@ export default {
     }
 };
 </script>
-<style></style>
+<style>
+.logo {
+    height: 35px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.75);
+}
+</style>
