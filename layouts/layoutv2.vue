@@ -3,7 +3,7 @@
         <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
             <b-navbar-brand class="py-0">
                 <!-- <Logo width="200px" height="" /> -->
-                <img src="/logo.png" alt="" class="logo">
+                <img src="/bank-stander/logo.png" alt="" class="logo">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
