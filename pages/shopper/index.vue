@@ -71,6 +71,28 @@ export default {
                         label: "Shop Option",
                         value: this.shop ? this.shop.option : "Third"
                     }
+                },
+                bank: {
+                    custom: {
+                        label: "Custom Bank",
+                        value: this.shop && this.shop.bank ? "🗹" : "☐"
+                    },
+                    type: {
+                        label: "Bank Type",
+                        value: this.shop && this.shop.bank ? this.shop.bank.type : "Npc"
+                    },
+                    option: {
+                        label: "Bank Option",
+                        value: this.shop && this.shop.bank ? this.shop.bank.option : "Second"
+                    },
+                    id: {
+                        label: "Bank ID",
+                        value: this.shop && this.shop.bank ? this.shop.bank.id : "0"
+                    },
+                    location: {
+                        label: "Bank Location",
+                        value: this.shop && this.shop.bank ? this.shop.bank.location : "x,y"
+                    }
                 }
             }
         }
