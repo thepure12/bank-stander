@@ -204,6 +204,72 @@
                     }
                 ]
             }
+        },
+        {
+            "text": "Mount Karuulm Weapon Shop",
+            "value": {
+                "name": "Leke quo Keran",
+                "location": "1298,3797",
+                "option": "Third",
+                "items": [
+                    {
+                        "slot": 1,
+                        "item": "Steel spear",
+                        "stock": 2
+                    },
+                    {
+                        "slot": 2,
+                        "item": "Mithril spear",
+                        "stock": 1
+                    },
+                    {
+                        "slot": 3,
+                        "item": "Adamant spear",
+                        "stock": 1
+                    },
+                    {
+                        "slot": 4,
+                        "item": "Rune spear",
+                        "stock": 1
+                    },
+                    {
+                        "slot": 5,
+                        "item": "Steel battleaxe",
+                        "stock": 2
+                    },
+                    {
+                        "slot": 6,
+                        "item": "Mithril battleaxe",
+                        "stock": 1
+                    },
+                    {
+                        "slot": 7,
+                        "item": "Adamant battleaxe",
+                        "stock": 1
+                    },
+                    {
+                        "slot": 8,
+                        "item": "Steel warhammer",
+                        "stock": 2
+                    },
+                    {
+                        "slot": 9,
+                        "item": "Mithril warhammer",
+                        "stock": 1
+                    },
+                    {
+                        "slot": 10,
+                        "item": "Adamant warhammer",
+                        "stock": 1
+                    }
+                ],
+                "bank": {
+                    "type": "Game Object",
+                    "option": "First",
+                    "id": 18299,
+                    "location": "1324,3825"
+                }
+            }
         }
     ]
 }
