@@ -338,5 +338,162 @@
                 }
             }
         ]
+    },
+    "tipped_bolts": {
+        "config": {
+            "general": {
+                "type": "Use Tool on Item"
+            },
+            "item": {
+                "firstAmount": 1,
+                "secondAmount": 1
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "items": [
+            {
+                "text": "Opal bolts",
+                "value": {
+                    "id": 45,
+                    "secondId": 877
+                }
+            },
+            {
+                "text": "Jade bolts",
+                "value": {
+                    "id": 9187,
+                    "secondId": 9139
+                }
+            },
+            {
+                "text": "Pearl bolts",
+                "value": {
+                    "id": 46,
+                    "secondId": 9140
+                }
+            },
+            {
+                "text": "Topaz bolts",
+                "value": {
+                    "id": 9188,
+                    "secondId": 9141
+                }
+            },
+            {
+                "text": "Sapphire bolts",
+                "value": {
+                    "id": 9189,
+                    "secondId": 9142
+                }
+            },
+            {
+                "text": "Emerald bolts",
+                "value": {
+                    "id": 9190,
+                    "secondId": 9142
+                }
+            },
+            {
+                "text": "Ruby bolts",
+                "value": {
+                    "id": 9191,
+                    "secondId": 9143
+                }
+            },
+            {
+                "text": "Diamond bolts",
+                "value": {
+                    "id": 9192,
+                    "secondId": 9143
+                }
+            },
+            {
+                "text": "Dragonstone bolts",
+                "value": {
+                    "id": 9193,
+                    "secondId": 9144
+                }
+            },
+            {
+                "text": "Onyx bolts",
+                "value": {
+                    "id": 9194,
+                    "secondId": 9144
+                }
+            },
+            {
+                "text": "Opal Dragon bolts",
+                "value": {
+                    "id": 45,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Jade Dragon bolts",
+                "value": {
+                    "id": 9187,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Pearl Dragon bolts",
+                "value": {
+                    "id": 46,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Topaz Dragon bolts",
+                "value": {
+                    "id": 9188,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Sapphire Dragon bolts",
+                "value": {
+                    "id": 9189,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Emerald Dragon bolts",
+                "value": {
+                    "id": 9190,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Ruby Dragon bolts",
+                "value": {
+                    "id": 9191,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Diamond Dragon bolts",
+                "value": {
+                    "id": 9192,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Dragonstone Dragon bolts",
+                "value": {
+                    "id": 9193,
+                    "secondId": 21905
+                }
+            },
+            {
+                "text": "Onyx Dragon bolts",
+                "value": {
+                    "id": 9194,
+                    "secondId": 21905
+                }
+            }
+        ]
     }
 }
