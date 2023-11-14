@@ -227,6 +227,8 @@ export default {
                         this.config.general.type.value = "Use Tool on Item"
                         this.config.item.firstAmount.value = 27
                         this.config.item.secondAmount.value = 1
+                    } else if (this.config.item.firstAmount.value == 1 && this.config.item.firstAmount.value) {
+                        // Do nothing
                     } else {
                         this.config.general.type.value = "Use Item on Item"
                         this.config.item.firstAmount.value = 14

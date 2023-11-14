@@ -22,7 +22,8 @@ export default {
             operations: [
                 { text: "Unstrung", value: fletching.unstrung },
                 { text: "Strung", value: fletching.strung },
-                { text: "Darts", value: fletching.darts }
+                { text: "Darts", value: fletching.darts },
+                { text: "Tipped Bolts", value: fletching.tipped_bolts }
             ],
             banks: banks,
             menuParam: null,
