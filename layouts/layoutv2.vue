@@ -18,6 +18,7 @@
                     <b-nav-item to="/v2/items">Items</b-nav-item>
                     <template v-if="$route.name.includes('v2')">
                         <b-nav-item to="/v2/smithing">Smithing</b-nav-item>
+                        <b-nav-item to="/v2/smelting">Smelting</b-nav-item>
                         <b-nav-item to="/v2/cooking">Cooking</b-nav-item>
                         <b-nav-item to="/v2/herblore">Herblore</b-nav-item>
                         <b-nav-item to="/v2/fletching">Fletching</b-nav-item>
