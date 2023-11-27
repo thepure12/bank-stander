@@ -221,6 +221,7 @@ export default {
         item(item) {
             if (item) {
                 this.config.item.firstId.value = item.id
+                if (item.firstAmount) this.config.item.firstAmount.value = item.firstAmount
                 if (item.secondId) {
                     this.config.item.secondId.value = item.secondId
                     if (item.stackable) {
@@ -229,6 +230,8 @@ export default {
                         this.config.item.secondAmount.value = 1
                     } else if (this.config.item.firstAmount.value == 1 && this.config.item.firstAmount.value) {
                         // Do nothing
+                    } else if (item.secondAmount) {
+                        this.config.item.secondAmount.value = item.secondAmount
                     } else {
                         this.config.general.type.value = "Use Item on Item"
                         this.config.item.firstAmount.value = 14
