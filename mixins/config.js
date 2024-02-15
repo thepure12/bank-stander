@@ -232,7 +232,15 @@ export default {
                     { key: "inventoryOp", value: this.config.inventory.opcode.value },
                     { key: "startButton", value: false },
                 ]
-            }).catch(err => {
+            })
+            .then(res => {
+                this.$bvToast.toast(`Config sent to RuneLite`, {
+                    title: 'Success',
+                    variant: "success",
+                    solid: true
+                })
+            })
+            .catch(err => {
                 this.$bvToast.toast(`${err}`, {
                     title: 'Request Failed',
                     variant: "danger",
