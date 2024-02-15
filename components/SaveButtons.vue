@@ -1,5 +1,6 @@
 <template>
     <div class="mb-1">
+        <b-btn size="sm" v-if="isDev" @click="$emit('post')">Send to RuneLite</b-btn>
         <b-btn size="sm" @click="$emit('click')">Save Setup</b-btn>
         <b-btn size="sm" variant="info" v-b-modal.save-help>Save Help</b-btn>
         <span class="text-info h6">
@@ -51,6 +52,10 @@
 </template>
 <script>
 export default {
-
+    computed: {
+        isDev() {
+            return this.$route.query.dev == "true" || false;
+        }
+    }
 }
 </script>

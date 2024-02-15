@@ -208,6 +208,37 @@ export default {
                     solid: true
                 })
             }
+        },
+        async postConfigToPlugin() {
+            await this.$axios.post("http://localhost:8080/config", {
+                group: "ElBankStander",
+                items: [
+                    { key: "type", value: this.config.general.type.value.replaceAll(" ", "_").toUpperCase() },
+                    { key: "firstId", value: this.config.item.firstId.value },
+                    { key: "firstAmount", value: this.config.item.firstAmount.value },
+                    { key: "useSecond", value: this.config.item.firstAmount.value },
+                    { key: "secondId", value: this.config.item.secondId.value },
+                    { key: "secondAmount", value: this.config.item.secondAmount.value },
+                    { key: "usePlaceholders", value: this.config.item.placeholderIds[0].value ? true : false },
+                    { key: "placeholder1Id", value: this.config.item.placeholderIds[0].value },
+                    { key: "placeholder2Id", value: this.config.item.placeholderIds[1].value },
+                    { key: "placeholder3Id", value: this.config.item.placeholderIds[2].value },
+                    { key: "objectId", value: this.config.object.id.value },
+                    { key: "bankType", value: this.config.bank.type.value },
+                    { key: "bankId", value: this.config.bank.id.value },
+                    { key: "bankOpCode", value: this.config.bank.opcode.value },
+                    { key: "menuOp", value: this.config.menu.opcode.value },
+                    { key: "menuParam1", value: this.config.menu.param.value },
+                    { key: "inventoryOp", value: this.config.inventory.opcode.value },
+                    { key: "startButton", value: false },
+                ]
+            }).catch(err => {
+                this.$bvToast.toast(`${err}`, {
+                    title: 'Request Failed',
+                    variant: "danger",
+                    solid: true
+                })
+            })
         }
     },
     watch: {
