@@ -1,6 +1,6 @@
 <template>
     <div class="mb-3">
-        <SaveButtons @click="saveConfig"></SaveButtons>
+        <SaveButtons @click="saveConfig" @post="postConfigToPlugin"></SaveButtons>
         <b-form-checkbox v-model="showCannonballs" class="my-2">Cannonballs</b-form-checkbox>
         <ConfigCardV2 v-model="bank" :items="banks" title="Bank" visible></ConfigCardV2>
         <template v-if="!showCannonballs">

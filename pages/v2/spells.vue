@@ -1,6 +1,6 @@
 <template>
     <div class="mb-3">
-        <SaveButtons @click="saveConfig"></SaveButtons>
+        <SaveButtons @click="saveConfig" @post="postConfigToPlugin"></SaveButtons>
         <ConfigCardV2 title="Alch Values">
             <b-input-group size="sm">
                 <b-input-group-prepend>

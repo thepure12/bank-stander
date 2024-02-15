@@ -1,6 +1,6 @@
 <template>
     <div class="mb-3">
-        <SaveButtons @click="saveConfig"></SaveButtons>
+        <SaveButtons @click="saveConfig" @post="postConfigToPlugin"></SaveButtons>
         <ConfigCardV2 v-model="bank" :items="combat.banks" title="NPC"></ConfigCardV2>
         <ConfigCardV2 v-for="(cfg, name, i) in config" :key="name" :title="getCfgTitle(name)" :config="cfg"></ConfigCardV2>
     </div>

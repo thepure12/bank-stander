@@ -1,6 +1,6 @@
 <template>
     <div class="mb-3">
-        <SaveButtons @click="saveConfig"></SaveButtons>
+        <SaveButtons @click="saveConfig" @post="postConfigToPlugin"></SaveButtons>
         <b-form-radio-group v-model="operation" :options="operations" @change="onSelect"></b-form-radio-group>
         <div v-if="item && item.stackable || operation == herblore.tar" class="text-primary font-weight-bold mt-2">
             <!-- <b-icon icon="info-circle"></b-icon> -->
