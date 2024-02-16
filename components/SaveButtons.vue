@@ -1,10 +1,24 @@
 <template>
     <div class="mb-1">
-        <b-btn size="sm" v-if="isDev" @click="$emit('post')">Send to RuneLite</b-btn>
-        <b-btn size="sm" @click="$emit('click')">Save Setup</b-btn>
-        <b-btn size="sm" variant="info" v-b-modal.save-help>Save Help</b-btn>
-        <span class="text-info h6">
-            &lt;== Please Read</span>
+        <div v-if="isDev">
+            <h6 v-b-toggle.pure-config-loader class="link">PureConfigLoader</h6>
+            <b-collapse visible id="pure-config-loader">
+                <div class="d-flex">
+                    <b-form-group label="Port" label-cols="2">
+                        <b-input v-model="port"></b-input>
+                    </b-form-group>
+                    <b-from-group class="p-1">
+                        <b-btn size="sm" v-if="isDev" @click="$emit('post', port)">Send to RuneLite</b-btn>
+                    </b-from-group>
+                </div>
+            </b-collapse>
+        </div>
+        <div v-else>
+            <b-btn size="sm" @click="$emit('click')">Save Setup</b-btn>
+            <b-btn size="sm" variant="info" v-b-modal.save-help>Save Help</b-btn>
+            <span class="text-info h6">
+                &lt;== Please Read</span>
+        </div>
         <b-modal id="save-help" size="xl" title="Save Help" header-class="bg-dark text-white" ok-title="Close" ok-only>
             <b-card header-class="h5">
                 <template #header>Selecting Properties File</template>
@@ -52,6 +66,11 @@
 </template>
 <script>
 export default {
+    data() {
+        return {
+            port: 8080
+        }
+    },
     computed: {
         isDev() {
             return this.$route.query.dev == "true" || false;

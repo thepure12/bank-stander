@@ -209,8 +209,8 @@ export default {
                 })
             }
         },
-        async postConfigToPlugin() {
-            await this.$axios.post("http://localhost:8080/config", {
+        async postConfigToPlugin(port = 8080) {
+            await this.$axios.post(`http://localhost:${port}/config`, {
                 group: "ElBankStander",
                 items: [
                     { key: "type", value: this.config.general.type.value.replaceAll(" ", "_").toUpperCase() },
