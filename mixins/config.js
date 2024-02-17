@@ -209,7 +209,7 @@ export default {
                 })
             }
         },
-        async postConfigToPlugin(port = 8080) {
+        async postConfigToPlugin(port = 8080, start=false) {
             await this.$axios.post(`http://localhost:${port}/config`, {
                 group: "ElBankStander",
                 items: [
@@ -230,7 +230,7 @@ export default {
                     { key: "menuOp", value: this.config.menu.opcode.value },
                     { key: "menuParam1", value: this.config.menu.param.value },
                     { key: "inventoryOp", value: this.config.inventory.opcode.value },
-                    { key: "startButton", value: false },
+                    { key: "startButton", value: start },
                 ]
             })
             .then(res => {

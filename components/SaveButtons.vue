@@ -4,11 +4,14 @@
             <h6 v-b-toggle.pure-config-loader class="link">PureConfigLoader</h6>
             <b-collapse visible id="pure-config-loader">
                 <div class="d-flex">
-                    <b-form-group label="Port" label-cols="2">
+                    <b-form-group label="Port" label-cols="2" v-b-tooltip.hover title="Should match PureConfigLoader's port">
                         <b-input v-model="port"></b-input>
                     </b-form-group>
+                    <b-form-group class="p-1 mx-3">
+                        <b-form-checkbox v-model="start" v-b-tooltip.hover title="Should BankStander start when config is loaded?">Start?</b-form-checkbox>
+                    </b-form-group>
                     <b-from-group class="p-1">
-                        <b-btn size="sm" v-if="isDev" @click="$emit('post', port)">Send to RuneLite</b-btn>
+                        <b-btn size="sm" v-if="isDev" @click="$emit('post', port, start)">Send to RuneLite</b-btn>
                     </b-from-group>
                 </div>
             </b-collapse>
@@ -68,7 +71,8 @@
 export default {
     data() {
         return {
-            port: 8080
+            port: 8080,
+            start: false
         }
     },
     computed: {
