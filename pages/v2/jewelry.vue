@@ -4,7 +4,7 @@
         <ConfigCardV2 v-model="bank" :items="jewelry.banks" title="Bank"></ConfigCardV2>
         <ConfigCardV2 v-model="item" :items="jewelry.items" title="Bar"></ConfigCardV2>
         <ConfigCardV2 v-if="item && item.items" v-model="tool" :items="item.items" title="Gem"></ConfigCardV2>
-        <ConfigCardV2 v-model="placeholders[0]" :items="jewelry.placeholders" title="Mould"></ConfigCardV2>
+        <ConfigCardV2 v-model="placeholders[0]" :items="item.placeholders" title="Mould"></ConfigCardV2>
         <ConfigCardV2 v-for="(cfg, name, i) in config" :key="name" :title="getCfgTitle(name)" :config="cfg"></ConfigCardV2>
     </div>
 </template>
