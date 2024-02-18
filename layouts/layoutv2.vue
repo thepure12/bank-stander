@@ -73,4 +73,8 @@ export default {
     -webkit-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.75);
 }
+
+.gap-3 {
+    gap: 1.25rem;
+}
 </style>
