@@ -42,11 +42,12 @@ export default {
     },
     created() {
         this.setDefaultConfig(this.jewelry.config)
+        // this.item = this.jewelry.items[0].value
+        // this.tool = this.item.items[0].value
+        // this.placeholders[0] = this.item.placeholders[0].value
     },
     mounted() {
-        this.item = this.jewelry.items[0].value
-        this.tool = this.item.items[0].value
-        this.placeholders[0] = this.item.placeholders[0].value
+        
     }
 }
 </script>
