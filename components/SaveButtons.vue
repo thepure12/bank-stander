@@ -4,7 +4,7 @@
             <h6 v-b-toggle.pure-config-loader class="link">PureConfigLoader</h6>
             <b-collapse visible id="pure-config-loader">
                 <div class="d-flex">
-                    <b-form-group label="Port" label-cols="2" v-b-tooltip.hover title="Should match PureConfigLoader's port">
+                    <b-form-group label="Port" label-cols="2" v-b-tooltip.hover title="Should match PureConfigLoader plugin's port">
                         <b-input v-model="port"></b-input>
                     </b-form-group>
                     <b-form-group class="p-1 mx-3">
