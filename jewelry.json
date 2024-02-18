@@ -1,0 +1,196 @@
+{
+    "config": {
+        "general": {
+            "type": "Use Item on Object"
+        },
+        "item": {
+            "firstAmount": 13,
+            "secondAmount": 13
+        },
+        "menu": {
+            "opcode": 57,
+            "param": 29229064
+        }
+    },
+    "items": [
+        {
+            "text": "Gold",
+            "value": {
+                "id": 2357,
+                "param": 29229064,
+                "items": [
+                    {
+                        "text": "None",
+                        "value": {
+                            "id": 0,
+                            "firstAmount": 27,
+                            "secondAmount": 0,
+                            "menuOffset": 0
+                        }
+                    },
+                    {
+                        "text": "Sapphire",
+                        "value": {
+                            "id": 1607,
+                            "firstAmount": 13,
+                            "secondAmount": 13,
+                            "menuOffset": 1
+                        }
+                    },
+                    {
+                        "text": "Emerald",
+                        "value": {
+                            "id": 1605,
+                            "firstAmount": 13,
+                            "secondAmount": 13,
+                            "menuOffset": 2
+                        }
+                    },
+                    {
+                        "text": "Ruby",
+                        "value": {
+                            "id": 1603,
+                            "firstAmount": 13,
+                            "secondAmount": 13,
+                            "menuOffset": 3
+                        }
+                    },
+                    {
+                        "text": "Diamond",
+                        "value": {
+                            "id": 1601,
+                            "firstAmount": 13,
+                            "secondAmount": 13,
+                            "menuOffset": 4
+                        }
+                    },
+                    {
+                        "text": "Dragonstone",
+                        "value": {
+                            "id": 1615,
+                            "firstAmount": 13,
+                            "secondAmount": 13,
+                            "menuOffset": 5
+                        }
+                    },
+                    {
+                        "text": "Onyx",
+                        "value": {
+                            "id": 6573,
+                            "firstAmount": 13,
+                            "secondAmount": 13,
+                            "menuOffset": 6
+                        }
+                    }
+                ],
+                "placeholders": [
+                    {
+                        "text": "Ring",
+                        "value": {
+                            "id": 1592,
+                            "menuOffset": 0
+                        }
+                    },
+                    {
+                        "text": "Necklace",
+                        "value": {
+                            "id": 1597,
+                            "menuOffset": 15
+                        }
+                    },
+                    {
+                        "text": "Amulet",
+                        "value": {
+                            "id": 1595,
+                            "menuOffset": 29
+                        }
+                    },
+                    {
+                        "text": "Bracelet",
+                        "value": {
+                            "id": 11065,
+                            "menuOffset": 42
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Silver",
+            "value": {
+                "id": 2355,
+                "param": 393223,
+                "items": [
+                    {
+                        "text": "Opal",
+                        "value": {
+                            "id": 1609,
+                            "menuOffset": 0,
+                            "firstAmount": 13,
+                            "secondAmount": 13
+                        }
+                    },
+                    {
+                        "text": "Jade",
+                        "value": {
+                            "id": 1611,
+                            "menuOffset": 1,
+                            "firstAmount": 13,
+                            "secondAmount": 13
+                        }
+                    },
+                    {
+                        "text": "Red Topaz",
+                        "value": {
+                            "id": 1613,
+                            "menuOffset": 2,
+                            "firstAmount": 13,
+                            "secondAmount": 13
+                        }
+                    }
+                ],
+                "placeholders": [
+                    {
+                        "text": "Ring",
+                        "value": {
+                            "id": 1592,
+                            "menuOffset": 0
+                        }
+                    },
+                    {
+                        "text": "Necklace",
+                        "value": {
+                            "id": 1597,
+                            "menuOffset": 4
+                        }
+                    },
+                    {
+                        "text": "Amulet",
+                        "value": {
+                            "id": 1595,
+                            "menuOffset": 8
+                        }
+                    },
+                    {
+                        "text": "Bracelet",
+                        "value": {
+                            "id": 11065,
+                            "menuOffset": 12
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "banks": [
+        {
+            "text": "Edgeville",
+            "value": {
+                "type": "Npc",
+                "id": 1613,
+                "opCode": 11,
+                "obj": 16469
+            }
+        }
+    ]
+}

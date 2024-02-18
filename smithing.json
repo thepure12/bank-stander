@@ -1,0 +1,1224 @@
+{
+    "anvil": {
+        "config": {
+            "general": {
+                "type": "Use Item on Object"
+            },
+            "item": {
+                "firstAmount": 27,
+                "secondAmount": 0,
+                "placeholderIds": [
+                    2347
+                ]
+            },
+            "menu": {
+                "opcode": 57
+            }
+        },
+        "items": [
+            {
+                "text": "Bronze",
+                "value": {
+                    "id": 2349,
+                    "items": [
+                        {
+                            "text": "Dagger",
+                            "value": {
+                                "param": 20447241,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Sword",
+                            "value": {
+                                "param": 20447242,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Scimitar",
+                            "value": {
+                                "param": 20447243,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Longsword",
+                            "value": {
+                                "param": 20447244,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "2H Sword",
+                            "value": {
+                                "param": 20447245,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Axe",
+                            "value": {
+                                "param": 20447246,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Mace",
+                            "value": {
+                                "param": 20447247,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Warhammer",
+                            "value": {
+                                "param": 20447248,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Battleaxe",
+                            "value": {
+                                "param": 20447249,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Claws",
+                            "value": {
+                                "param": 20447250,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Chainbody",
+                            "value": {
+                                "param": 20447251,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platelegs",
+                            "value": {
+                                "param": 20447252,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Plateskirt",
+                            "value": {
+                                "param": 20447253,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platebody",
+                            "value": {
+                                "param": 20447254,
+                                "bars": 5
+                            }
+                        },
+                        {
+                            "text": "Nails",
+                            "value": {
+                                "param": 20447255,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Medium Helm",
+                            "value": {
+                                "param": 20447256,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Full Helm",
+                            "value": {
+                                "param": 20447257,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Square Shield",
+                            "value": {
+                                "param": 20447258,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Kiteshield",
+                            "value": {
+                                "param": 20447259,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Dart Tips",
+                            "value": {
+                                "param": 20447261,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Arrowtips",
+                            "value": {
+                                "param": 20447262,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Throwing Knives",
+                            "value": {
+                                "param": 20447263,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Bronze Wire",
+                            "value": {
+                                "param": 20447264,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Javelin Heads",
+                            "value": {
+                                "param": 20447265,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Bolts",
+                            "value": {
+                                "param": 20447266,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Limbs",
+                            "value": {
+                                "param": 20447267,
+                                "bars": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Iron",
+                "value": {
+                    "id": 2351,
+                    "items": [
+                        {
+                            "text": "Dagger",
+                            "value": {
+                                "param": 20447241,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Sword",
+                            "value": {
+                                "param": 20447242,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Scimitar",
+                            "value": {
+                                "param": 20447243,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Longsword",
+                            "value": {
+                                "param": 20447244,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "2H Sword",
+                            "value": {
+                                "param": 20447245,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Axe",
+                            "value": {
+                                "param": 20447246,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Mace",
+                            "value": {
+                                "param": 20447247,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Warhammer",
+                            "value": {
+                                "param": 20447248,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Battleaxe",
+                            "value": {
+                                "param": 20447249,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Claws",
+                            "value": {
+                                "param": 20447250,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Chainbody",
+                            "value": {
+                                "param": 20447251,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platelegs",
+                            "value": {
+                                "param": 20447252,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Plateskirt",
+                            "value": {
+                                "param": 20447253,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platebody",
+                            "value": {
+                                "param": 20447254,
+                                "bars": 5
+                            }
+                        },
+                        {
+                            "text": "Nails",
+                            "value": {
+                                "param": 20447255,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Medium Helm",
+                            "value": {
+                                "param": 20447256,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Full Helm",
+                            "value": {
+                                "param": 20447257,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Square Shield",
+                            "value": {
+                                "param": 20447258,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Kiteshield",
+                            "value": {
+                                "param": 20447259,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Lantern Frame",
+                            "value": {
+                                "param": 20447260,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Dart Tips",
+                            "value": {
+                                "param": 20447261,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Arrowtips",
+                            "value": {
+                                "param": 20447262,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Throwing Knives",
+                            "value": {
+                                "param": 20447263,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Iron Spit",
+                            "value": {
+                                "param": 20447264,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Javelin Heads",
+                            "value": {
+                                "param": 20447265,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Bolts",
+                            "value": {
+                                "param": 20447266,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Limbs",
+                            "value": {
+                                "param": 20447267,
+                                "bars": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Steel",
+                "value": {
+                    "id": 2353,
+                    "items": [
+                        {
+                            "text": "Dagger",
+                            "value": {
+                                "param": 20447241,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Sword",
+                            "value": {
+                                "param": 20447242,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Scimitar",
+                            "value": {
+                                "param": 20447243,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Longsword",
+                            "value": {
+                                "param": 20447244,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "2H Sword",
+                            "value": {
+                                "param": 20447245,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Axe",
+                            "value": {
+                                "param": 20447246,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Mace",
+                            "value": {
+                                "param": 20447247,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Warhammer",
+                            "value": {
+                                "param": 20447248,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Battleaxe",
+                            "value": {
+                                "param": 20447249,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Claws",
+                            "value": {
+                                "param": 20447250,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Chainbody",
+                            "value": {
+                                "param": 20447251,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platelegs",
+                            "value": {
+                                "param": 20447252,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Plateskirt",
+                            "value": {
+                                "param": 20447253,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platebody",
+                            "value": {
+                                "param": 20447254,
+                                "bars": 5
+                            }
+                        },
+                        {
+                            "text": "Nails",
+                            "value": {
+                                "param": 20447255,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Medium Helm",
+                            "value": {
+                                "param": 20447256,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Full Helm",
+                            "value": {
+                                "param": 20447257,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Square Shield",
+                            "value": {
+                                "param": 20447258,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Kiteshield",
+                            "value": {
+                                "param": 20447259,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Bullseye Lamp",
+                            "value": {
+                                "param": 20447260,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Dart Tips",
+                            "value": {
+                                "param": 20447261,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Arrowtips",
+                            "value": {
+                                "param": 20447262,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Throwing Knives",
+                            "value": {
+                                "param": 20447263,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Studs",
+                            "value": {
+                                "param": 20447264,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Javelin Heads",
+                            "value": {
+                                "param": 20447265,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Bolts",
+                            "value": {
+                                "param": 20447266,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Limbs",
+                            "value": {
+                                "param": 20447267,
+                                "bars": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Mithril",
+                "value": {
+                    "id": 2359,
+                    "items": [
+                        {
+                            "text": "Dagger",
+                            "value": {
+                                "param": 20447241,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Sword",
+                            "value": {
+                                "param": 20447242,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Scimitar",
+                            "value": {
+                                "param": 20447243,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Longsword",
+                            "value": {
+                                "param": 20447244,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "2H Sword",
+                            "value": {
+                                "param": 20447245,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Axe",
+                            "value": {
+                                "param": 20447246,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Mace",
+                            "value": {
+                                "param": 20447247,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Warhammer",
+                            "value": {
+                                "param": 20447248,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Battleaxe",
+                            "value": {
+                                "param": 20447249,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Claws",
+                            "value": {
+                                "param": 20447250,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Chainbody",
+                            "value": {
+                                "param": 20447251,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platelegs",
+                            "value": {
+                                "param": 20447252,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Plateskirt",
+                            "value": {
+                                "param": 20447253,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platebody",
+                            "value": {
+                                "param": 20447254,
+                                "bars": 5
+                            }
+                        },
+                        {
+                            "text": "Nails",
+                            "value": {
+                                "param": 20447255,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Medium Helm",
+                            "value": {
+                                "param": 20447256,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Full Helm",
+                            "value": {
+                                "param": 20447257,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Square Shield",
+                            "value": {
+                                "param": 20447258,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Kiteshield",
+                            "value": {
+                                "param": 20447259,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Dart Tips",
+                            "value": {
+                                "param": 20447261,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Arrowtips",
+                            "value": {
+                                "param": 20447262,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Throwing Knives",
+                            "value": {
+                                "param": 20447263,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Grapple Tip",
+                            "value": {
+                                "param": 20447264,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Javelin Heads",
+                            "value": {
+                                "param": 20447265,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Bolts",
+                            "value": {
+                                "param": 20447266,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Limbs",
+                            "value": {
+                                "param": 20447267,
+                                "bars": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Adamant",
+                "value": {
+                    "id": 2361,
+                    "items": [
+                        {
+                            "text": "Dagger",
+                            "value": {
+                                "param": 20447241,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Sword",
+                            "value": {
+                                "param": 20447242,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Scimitar",
+                            "value": {
+                                "param": 20447243,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Longsword",
+                            "value": {
+                                "param": 20447244,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "2H Sword",
+                            "value": {
+                                "param": 20447245,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Axe",
+                            "value": {
+                                "param": 20447246,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Mace",
+                            "value": {
+                                "param": 20447247,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Warhammer",
+                            "value": {
+                                "param": 20447248,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Battleaxe",
+                            "value": {
+                                "param": 20447249,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Claws",
+                            "value": {
+                                "param": 20447250,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Chainbody",
+                            "value": {
+                                "param": 20447251,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platelegs",
+                            "value": {
+                                "param": 20447252,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Plateskirt",
+                            "value": {
+                                "param": 20447253,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platebody",
+                            "value": {
+                                "param": 20447254,
+                                "bars": 5
+                            }
+                        },
+                        {
+                            "text": "Nails",
+                            "value": {
+                                "param": 20447255,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Medium Helm",
+                            "value": {
+                                "param": 20447256,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Full Helm",
+                            "value": {
+                                "param": 20447257,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Square Shield",
+                            "value": {
+                                "param": 20447258,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Kiteshield",
+                            "value": {
+                                "param": 20447259,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Dart Tips",
+                            "value": {
+                                "param": 20447261,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Arrowtips",
+                            "value": {
+                                "param": 20447262,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Throwing Knives",
+                            "value": {
+                                "param": 20447263,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Javelin Heads",
+                            "value": {
+                                "param": 20447264,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Bolts",
+                            "value": {
+                                "param": 20447266,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Limbs",
+                            "value": {
+                                "param": 20447267,
+                                "bars": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Rune",
+                "value": {
+                    "id": 2363,
+                    "items": [
+                        {
+                            "text": "Dagger",
+                            "value": {
+                                "param": 20447241,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Sword",
+                            "value": {
+                                "param": 20447242,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Scimitar",
+                            "value": {
+                                "param": 20447243,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Longsword",
+                            "value": {
+                                "param": 20447244,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "2H Sword",
+                            "value": {
+                                "param": 20447245,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Axe",
+                            "value": {
+                                "param": 20447246,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Mace",
+                            "value": {
+                                "param": 20447247,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Warhammer",
+                            "value": {
+                                "param": 20447248,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Battleaxe",
+                            "value": {
+                                "param": 20447249,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Claws",
+                            "value": {
+                                "param": 20447250,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Chainbody",
+                            "value": {
+                                "param": 20447251,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platelegs",
+                            "value": {
+                                "param": 20447252,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Plateskirt",
+                            "value": {
+                                "param": 20447253,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Platebody",
+                            "value": {
+                                "param": 20447254,
+                                "bars": 5
+                            }
+                        },
+                        {
+                            "text": "Nails",
+                            "value": {
+                                "param": 20447255,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Medium Helm",
+                            "value": {
+                                "param": 20447256,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Full Helm",
+                            "value": {
+                                "param": 20447257,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Square Shield",
+                            "value": {
+                                "param": 20447258,
+                                "bars": 2
+                            }
+                        },
+                        {
+                            "text": "Kiteshield",
+                            "value": {
+                                "param": 20447259,
+                                "bars": 3
+                            }
+                        },
+                        {
+                            "text": "Dart Tips",
+                            "value": {
+                                "param": 20447261,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Arrowtips",
+                            "value": {
+                                "param": 20447262,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Throwing Knives",
+                            "value": {
+                                "param": 20447263,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Javelin Heads",
+                            "value": {
+                                "param": 20447264,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Bolts",
+                            "value": {
+                                "param": 20447266,
+                                "bars": 1
+                            }
+                        },
+                        {
+                            "text": "Limbs",
+                            "value": {
+                                "param": 20447267,
+                                "bars": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "banks": [
+            {
+                "text": "Varrock West",
+                "value": {
+                    "type": "Npc",
+                    "id": 2897,
+                    "opCode": 11,
+                    "obj": 2097
+                }
+            },
+            {
+                "text": "Prifddinas",
+                "value": {
+                    "type": "Npc",
+                    "id": 9131,
+                    "opCode": 11,
+                    "obj": 2097
+                }
+            }
+        ]
+    },
+    "cannonballs": {
+        "config": {
+            "general": {
+                "type": "Use Item on Object"
+            },
+            "item": {
+                "firstId": 2353,
+                "firstAmount": 27,
+                "placeholderIds": [
+                    4
+                ]
+            },
+            "menu": {
+                "opcode": 57,
+                "param": 17694734
+            }
+        },
+        "placeholders": [
+            {
+                "text": "Ammo Mould",
+                "value": {
+                    "id": 4
+                }
+            },
+            {
+                "text": "Double Ammo Mould",
+                "value": {
+                    "id": 27012
+                }
+            }
+        ],
+        "banks": [
+            {
+                "text": "Edgeville",
+                "value": {
+                    "type": "Npc",
+                    "id": 1613,
+                    "opCode": 11,
+                    "obj": 16469
+                }
+            }
+        ]
+    }
+}

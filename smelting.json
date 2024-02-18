@@ -1,0 +1,87 @@
+{
+    "config": {
+        "general": {
+            "type": "Use Item on Object"
+        },
+        "item": {
+            "firstAmount": 28
+        },
+        "menu": {
+            "opcode": 57,
+            "param": 17694734
+        }
+    },
+    "items": [
+        {
+            "text": "Bronze Bar",
+            "value": {
+                "id": 436,
+                "firstAmount": 14,
+                "secondId": 438,
+                "secondAmount": 14
+            }
+        },
+        {
+            "text": "Iron Bar",
+            "value": {
+                "id": 440
+            }
+        },
+        {
+            "text": "Steel Bar",
+            "value": {
+                "id": 440,
+                "firstAmount": 9,
+                "secondId": 453,
+                "secondAmount": 18
+            }
+        },
+        {
+            "text": "Mithril Bar",
+            "value": {
+                "id": 447,
+                "firstAmount": 5,
+                "secondId": 453,
+                "secondAmount": 20
+            }
+        },
+        {
+            "text": "Adamantite Bar",
+            "value": {
+                "id": 449,
+                "firstAmount": 4,
+                "secondId": 453,
+                "secondAmount": 24
+            }
+        },
+        {
+            "text": "Runite Bar",
+            "value": {
+                "id": 451,
+                "firstAmount": 3,
+                "secondId": 453,
+                "secondAmount": 24
+            }
+        }
+    ],
+    "banks": [
+        {
+            "text": "Edgeville",
+            "value": {
+                "type": "Npc",
+                "id": 1613,
+                "opCode": 11,
+                "obj": 16469
+            }
+        },
+        {
+            "text": "Al Kharid",
+            "value": {
+                "type": "Npc",
+                "id": 3090,
+                "opCode": 11,
+                "obj": 24009
+            }
+        }
+    ]
+}

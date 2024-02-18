@@ -1,0 +1,466 @@
+{
+    "cooking": {
+        "type": 3,
+        "firstItemAmount": 28,
+        "menuOpcode": 57,
+        "menuParam": 17694734,
+        "invOpcode": 0,
+        "items": [
+            {
+                "text": "Chicken",
+                "value": {
+                    "id": 2138
+                }
+            },
+            {
+                "text": "Shrimp",
+                "value": {
+                    "id": 317
+                }
+            },
+            {
+                "text": "Anchovies",
+                "value": {
+                    "id": 321
+                }
+            },
+            {
+                "text": "Sardines",
+                "value": {
+                    "id": 327
+                }
+            },
+            {
+                "text": "Herring",
+                "value": {
+                    "id": 345
+                }
+            },
+            {
+                "text": "Mackerel",
+                "value": {
+                    "id": 353
+                }
+            },
+            {
+                "text": "Trout",
+                "value": {
+                    "id": 335
+                }
+            },
+            {
+                "text": "Cod",
+                "value": {
+                    "id": 341
+                }
+            },
+            {
+                "text": "Pike",
+                "value": {
+                    "id": 349
+                }
+            },
+            {
+                "text": "Salmon",
+                "value": {
+                    "id": 331
+                }
+            },
+            {
+                "text": "Tuna",
+                "value": {
+                    "id": 359
+                }
+            },
+            {
+                "text": "Karambwan",
+                "value": {
+                    "id": 3142
+                }
+            },
+            {
+                "text": "Lobster",
+                "value": {
+                    "id": 377
+                }
+            },
+            {
+                "text": "Bass",
+                "value": {
+                    "id": 363
+                }
+            },
+            {
+                "text": "Swordfish",
+                "value": {
+                    "id": 371
+                }
+            },
+            {
+                "text": "Monkfish",
+                "value": {
+                    "id": 7945
+                }
+            },
+            {
+                "text": "Shark",
+                "value": {
+                    "id": 383
+                }
+            },
+            {
+                "text": "Sea turtle",
+                "value": {
+                    "id": 395
+                }
+            },
+            {
+                "text": "Anglerfish",
+                "value": {
+                    "id": 13439
+                }
+            },
+            {
+                "text": "Dark crab",
+                "value": {
+                    "id": 11934
+                }
+            },
+            {
+                "text": "Manta ray",
+                "value": {
+                    "id": 389
+                }
+            }
+        ],
+        "banks": [
+            {
+                "text": "Al Kharid",
+                "value": {
+                    "type": "Npc",
+                    "id": 3090,
+                    "opCode": 11,
+                    "obj": 26181
+                }
+            },
+            {
+                "text": "Hosidius Range",
+                "value": {
+                    "type": "Game Object",
+                    "id": 21301,
+                    "opCode": 3,
+                    "obj": 21302
+                }
+            }
+        ]
+    },
+    "jewelry": {
+        "type": 3,
+        "firstItemAmount": 13,
+        "secondItemAmount": 13,
+        "menuOpcode": 57,
+        "invOpcode": 0,
+        "titles": {
+            "items": "Bar",
+            "tools": "Gem",
+            "placeholders": [
+                "Mould"
+            ]
+        },
+        "banks": [
+            {
+                "text": "Edgeville",
+                "value": {
+                    "type": "Npc",
+                    "id": 1613,
+                    "opCode": 11,
+                    "obj": 16469
+                }
+            }
+        ],
+        "items": [
+            {
+                "text": "Gold",
+                "value": {
+                    "id": 2357,
+                    "tools": [
+                        {
+                            "text": "Sapphire",
+                            "value": {
+                                "id": 1607
+                            }
+                        },
+                        {
+                            "text": "Emerald",
+                            "value": {
+                                "id": 1605
+                            }
+                        },
+                        {
+                            "text": "Ruby",
+                            "value": {
+                                "id": 1603
+                            }
+                        },
+                        {
+                            "text": "Diamond",
+                            "value": {
+                                "id": 1601
+                            }
+                        },
+                        {
+                            "text": "Dragonstone",
+                            "value": {
+                                "id": 1615
+                            }
+                        },
+                        {
+                            "text": "Onyx",
+                            "value": {
+                                "id": 6573
+                            }
+                        }
+                    ],
+                    "placeholders": [
+                        [
+                            {
+                                "text": "Ring",
+                                "value": {
+                                    "id": 1592
+                                }
+                            },
+                            {
+                                "text": "Necklace",
+                                "value": {
+                                    "id": 1597
+                                }
+                            },
+                            {
+                                "text": "Amulet",
+                                "value": {
+                                    "id": 1595
+                                }
+                            },
+                            {
+                                "text": "Bracelet",
+                                "value": {
+                                    "id": 11065
+                                }
+                            }
+                        ]
+                    ],
+                    "startParam": {
+                        "1592": 29229064,
+                        "1595": 29229093,
+                        "1597": 29229079,
+                        "11065": 29229106
+                    }
+                }
+            }
+        ]
+    },
+    "glassblowing": {
+        "type": 1,
+        "firstItemAmount": 27,
+        "menuOpcode": 57,
+        "invOpcode": 0,
+        "toolId": 1785,
+        "banks": [
+            {
+                "text": "Grand Exchange",
+                "value": {
+                    "type": "Npc",
+                    "id": 1634,
+                    "opCode": 11
+                }
+            },
+            {
+                "text": "Prifddinas",
+                "value": {
+                    "type": "Npc",
+                    "id": 9131,
+                    "opCode": 11
+                }
+            },
+            {
+                "text": "Varrock West",
+                "value": {
+                    "type": "Npc",
+                    "id": 2897,
+                    "opCode": 11
+                }
+            },
+            {
+                "text": "Woodcutting Guild",
+                "value": {
+                    "type": "Game Object",
+                    "id": 28861,
+                    "opCode": 3
+                }
+            }
+        ],
+        "items": [
+            {
+                "text": "Beer glass",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694734
+                }
+            },
+            {
+                "text": "Empty candle lantern",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694735
+                }
+            },
+            {
+                "text": "Empty oil lamp",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694736
+                }
+            },
+            {
+                "text": "Vial",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694737
+                }
+            },
+            {
+                "text": "Fishbowl",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694738
+                }
+            },
+            {
+                "text": "Unpowered orb",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694739
+                }
+            },
+            {
+                "text": "Lantern lens",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694740
+                }
+            },
+            {
+                "text": "Empty light orb",
+                "value": {
+                    "id": 1775,
+                    "menuParam": 17694741
+                }
+            }
+        ]
+    },
+    "smithing": {
+        "type": 3,
+        "firstItemAmount": 27,
+        "secondItemAmount": 0,
+        "menuOpcode": 57,
+        "invOpcode": 0,
+        "titles": {
+            "items": "Bar"
+        },
+        "banks": [
+            {
+                "text": "Varrock West",
+                "value": {
+                    "type": "Npc",
+                    "id": 2897,
+                    "opCode": 11,
+                    "obj": 2097
+                }
+            },
+            {
+                "text": "Prifddinas",
+                "value": {
+                    "type": "Npc",
+                    "id": 9131,
+                    "opCode": 11,
+                    "obj": 2097
+                }
+            }
+        ],
+        "items": [
+            {
+                "text": "Bronze",
+                "value": {
+                    "id": 2349,
+                    "uniqueItems": {
+                        "20447264": "Bronze Wire"
+                    }
+                }
+            },
+            {
+                "text": "Iron",
+                "value": {
+                    "id": 2351,
+                    "uniqueItems": {
+                        "20447260": [
+                            "Lantern Frame",
+                            1
+                        ],
+                        "20447264": [
+                            "Iron Spit",
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "text": "Steel",
+                "value": {
+                    "id": 2353,
+                    "uniqueItems": {
+                        "20447260": [
+                            "Bullseye Lamp",
+                            1
+                        ],
+                        "20447264": [
+                            "Studs",
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "text": "Mithril",
+                "value": {
+                    "id": 2359,
+                    "uniqueItems": {
+                        "20447264": [
+                            "Grapple Tip",
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "text": "Adamant",
+                "value": {
+                    "id": 2361,
+                    "uniqueItems": {
+                        "20447264": "Javelin Heads",
+                        "20447265": ""
+                    }
+                }
+            },
+            {
+                "text": "Rune",
+                "value": {
+                    "id": 2363,
+                    "uniqueItems": {
+                        "20447264": "Javelin Heads",
+                        "20447265": ""
+                    }
+                }
+            }
+        ]
+    }
+}

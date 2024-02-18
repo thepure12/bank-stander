@@ -1,0 +1,221 @@
+{
+    "config": {
+        "general": {
+            "type": "Use Tool on Item"
+        },
+        "item": {
+            "firstAmount": 26,
+            "secondId": 1733,
+            "secondAmount": 1,
+            "placeholderIds": [
+                1734
+            ]
+        },
+        "menu": {
+            "opcode": 57,
+            "param": 17694734
+        }
+    },
+    "mats": [
+        {
+            "text": "Leather",
+            "value": {
+                "id": 1741,
+                "items": [
+                    {
+                        "text": "Gloves",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Boots",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Cowl",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694737,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Body",
+                        "value": {
+                            "param": 17694738,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694739,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Coif",
+                        "value": {
+                            "param": 17694740,
+                            "leather": 1
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Hard Leather",
+            "value": {
+                "id": 1743,
+                "items": []
+            }
+        },
+        {
+            "text": "Green Dragon Leather",
+            "value": {
+                "id": 1745,
+                "items": [
+                    {
+                        "text": "Body",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
+                    },
+                    {
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Blue Dragon Leather",
+            "value": {
+                "id": 2505,
+                "items": [
+                    {
+                        "text": "Body",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
+                    },
+                    {
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Red Dragon Leather",
+            "value": {
+                "id": 2507,
+                "items": [
+                    {
+                        "text": "Body",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
+                    },
+                    {
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Black Dragon Leather",
+            "value": {
+                "id": 2509,
+                "items": [
+                    {
+                        "text": "Body",
+                        "value": {
+                            "param": 17694734,
+                            "leather": 3
+                        }
+                    },
+                    {
+                        "text": "Vambraces",
+                        "value": {
+                            "param": 17694735,
+                            "leather": 1
+                        }
+                    },
+                    {
+                        "text": "Chaps",
+                        "value": {
+                            "param": 17694736,
+                            "leather": 2
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "banks": [
+        {
+            "text": "Al Kharid",
+            "value": {
+                "type": "Npc",
+                "id": 3090,
+                "opCode": 11,
+                "obj": 26181
+            }
+        },
+        {
+            "text": "Hosidius Range",
+            "value": {
+                "type": "Game Object",
+                "id": 21301,
+                "opCode": 3,
+                "obj": 21302
+            }
+        }
+    ]
+}
