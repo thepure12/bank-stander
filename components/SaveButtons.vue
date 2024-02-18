@@ -1,26 +1,26 @@
 <template>
     <div class="mb-1">
-        <div v-if="isDev">
-            <h6 v-b-toggle.pure-config-loader class="link">PureConfigLoader</h6>
-            <b-collapse visible id="pure-config-loader">
-                <div class="d-flex">
-                    <b-form-group label="Port" label-cols="2" v-b-tooltip.hover title="Should match PureConfigLoader plugin's port">
-                        <b-input v-model="port"></b-input>
-                    </b-form-group>
-                    <b-form-group class="p-1 mx-3">
-                        <b-form-checkbox v-model="start" v-b-tooltip.hover title="Should BankStander start when config is loaded?">Start?</b-form-checkbox>
-                    </b-form-group>
-                    <b-from-group class="p-1">
-                        <b-btn size="sm" v-if="isDev" @click="$emit('post', port, start)">Send to RuneLite</b-btn>
-                    </b-from-group>
-                </div>
-            </b-collapse>
+        <div v-if="isDev || showConfigLoader">
+            <ConfigCardV2 title="PureConfigLoader">
+                <b-form inline class="gap-3">
+                    <label for="port" v-b-tooltip.hover title="Should match PureConfigLoader plugin's port">
+                        <b-icon icon="info-circle" class="mr-1"></b-icon> Port
+                    </label>
+                    <b-input v-model="port"></b-input>
+                    <b-form-checkbox v-model="start" v-b-tooltip.hover
+                        title="Should BankStander start when config is loaded?">
+                        <b-icon icon="info-circle" class="mr-1"></b-icon> Start?
+                    </b-form-checkbox>
+                    <b-btn size="sm" @click="$emit('post', port, start)">Send to RuneLite</b-btn>
+                    <b-btn v-if="!isDev" size="sm" @click="showConfigLoader=false">Back</b-btn>
+                </b-form>
+            </ConfigCardV2>
         </div>
         <div v-else>
             <b-btn size="sm" @click="$emit('click')">Save Setup</b-btn>
             <b-btn size="sm" variant="info" v-b-modal.save-help>Save Help</b-btn>
-            <span class="text-info h6">
-                &lt;== Please Read</span>
+            <b-btn size="sm" @click="showConfigLoader = !showConfigLoader">Config Loader</b-btn>
+            <!-- <span class="text-info h6">&lt;== Please Read</span> -->
         </div>
         <b-modal id="save-help" size="xl" title="Save Help" header-class="bg-dark text-white" ok-title="Close" ok-only>
             <b-card header-class="h5">
@@ -68,17 +68,23 @@
     </div>
 </template>
 <script>
+import { BIcon, BIconInfoCircle } from 'bootstrap-vue'
 export default {
     data() {
         return {
             port: 8080,
-            start: false
-        }
+            start: false,
+            showConfigLoader: false,
+        };
     },
     computed: {
         isDev() {
             return this.$route.query.dev == "true" || false;
         }
+    },
+    components: {
+        BIcon,
+        BIconInfoCircle
     }
 }
 </script>
